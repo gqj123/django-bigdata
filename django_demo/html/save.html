@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="Zh-hans" >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>国家海洋信息中心管理系统</title>
+</head>
+
+<body background="/static/img/bg11.jpg" style=" background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+">
+<h1 align="center">   欢迎使用家海洋信息息中心数据管理系统</h1>
+<h2 align="center">HDFS文件管理系统</h2>
+<h3 align="right">welcome {{name}} {{ level }}!</h3>
+<div class="center_save" style=" text-align:center;">
+    <div class="title_hdfs">浏览文件夹</div>
+
+    <div class="dhfs_show",align="center">
+        <form action="/save/hdfsfile/{{name}}/" method="post" class="dhfs_form">
+            <input type="text" name="filepath" id="filepath" class="hdfs_input" placeholder="{{path_value}}" >
+            <button class="hdfs_button"> 前往</button>
+            <a href="{% url 'search' %}">
+                {#    <a href="/save/search" target="_blank" >#}
+                <input type=button value="查询文件" style="width:200px;height:30px;">
+            </a>
+            <br>
+
+            <br>
+            {% if error %}<div class="show_error" style="color: red;margin-left: 10px;">Error：{{error}}</div>{% endif %}
+            {% if more %}<div class="show_error">【详情】当前路径：{{path_value}}<br>【包括】:</div>{% endif %}
+        </form>
+{#        <table class="bordered">#}
+{#            <tr style="font-weight: bolder;font-size: 16px;">#}
+{#                <td>Permission</td><td>Owner</td><td>Group</td><td>Replication</td><td>Length</td>#}
+{#                <td>BlockSize</td><td>Type</td><td>Children<br>Num</td><td>FileId</td><td>Name</td><td>Action</td>#}
+{#            </tr>#}
+{#            {% for mess in mess_list %}#}
+{#                <tr>#}
+{#                    <td>{{mess.permission}}</td><td>{{mess.owner}}</td><td>{{mess.group}}</td><td>{{mess.replication}}</td><td>{{mess.length}}</td><td>{{mess.blockSize}}</td>#}
+{#                    <td>{{mess.type}}</td><td>{{mess.childrenNum}}</td><td>{{mess.fileId}}</td><td><a href="/save/file/{{name}}/path={{ mess.path }}/">{{ mess.path }}</a></td>#}
+{#                    <td><a href="/save/more/{{name}}/path={{ mess.path }}/">查看详情/其他操作</a></td>#}
+{#                </tr>#}
+{#            {%endfor %}#}
+{#        </table>#}
+        <table class="bordered" align="center">
+            <tr style="font-weight: bolder;font-size: 16px;">
+                <td>文件名</td><td>副本数</td><td>子目录数</td><td>操作</td>
+            </tr>
+            {% for mess in mess_list %}
+                <tr>
+                    <td><a href="/save/file/{{name}}/path={{ mess.path }}/">{{ mess.path }}</a></td>
+                    <td>{{mess.replication}}</td>
+                    <td>{{mess.childrenNum}}</td>
+
+{#                    <td>{{mess.fileId}}</td><td>{{mess.owner}}</td><td>{{mess.group}}</td><td>{{mess.replication}}</td><td>{{mess.length}}</td><td>{{mess.blockSize}}</td>#}
+{#                    <td>{{mess.type}}</td><td>{{mess.childrenNum}}</td><td>{{mess.fileId}}</td><td><a href="/save/file/{{name}}/path={{ mess.path }}/">{{ mess.path }}</a></td>#}
+                    <td><a href="/save/more/{{name}}/path={{ mess.path }}/">查看详情/其他操作</a></td>
+                </tr>
+            {%endfor %}
+        </table>
+        {% if root_more and not error %}
+            <div class="show_error">我要对目录【{{path_value}} 】 进行操作：
+                <a href="/save/more/{{name}}/path={{ path_value }}/" style="background-color: sandybrown">CLICK</a></div>
+            </div>
+        {% endif %}
+</div>
+
+<div class="dhfs_show" style=" text-align:center;">
+{#    {% if more %}#}
+        <div class="show_error">&nbsp;&nbsp;目录【{{path_value}} 】 的具体信息：</div>
+        <div class="more">
+            <table class="bordered" align="center">
+                <tr style="font-weight: bolder;">
+                    {% for k,v in more_mess.items %}
+                        <td>{{ k }}</td>
+                    {% endfor %}
+                </tr>
+                <tr>
+                    {% for k,v in more_mess.items %}
+                        <td>{{ v }}</td>
+                    {% endfor %}
+                </tr>
+            </table>
+            <div class="show_error">&nbsp;&nbsp;目录【{{path_value}} 】 的具体操作:
+                <button class="more_button" style="margin-left: 20px;"><a href="/save/delete/{{name}}/path={{ path_value }}">删除</a></button>
+            </div>
+            <p></p>
+        </div>
+        <br>
+
+    <a href="{% url 'search' %}">
+        {#    <a href="/save/search" target="_blank" >#}
+        <input type=button value="查询文件" style="width:200px;height:30px;">
+    </a>
+
+        <form action="/save/rename/{{name}}/path={{ path_value}}/" method="post">
+            <input type="text" name="rename" id="rename" class="more_input" placeholder="输入新的文件夹名字" >
+            <button class="more_button"> 重命名</button>
+        </form>
+        <br>
+        <form action="/save/mkdir/{{name}}/path={{ path_value }}/" method="post">
+            <input type="text" name="mkdir" id="mkdir" class="more_input" placeholder="输入新的子目录名字" >
+            <button class="more_button">创建</button>
+        </form>
+        <br>
+        <form action="/save/down/{{name}}/path={{ path_value }}/" method="post">
+            <input type="text" name="download" id="download" class="more_input" placeholder="输入下载路径" >
+            <button class="more_button"> 下载</button>
+        </form>
+        <br>
+{#        <form action="/save/upload/{{name}}/path={{ path_value }}/" method="post">#}
+{#            <input type="text" name="up" id="up" class="more_input" placeholder="输入上传文件路径" >#}
+{#            <button class="more_button"> 上传</button>#}
+{#            <br/>#}
+{#        </form>#}
+        <br>
+
+
+
+
+        <form enctype="multipart/form-data" action="/save/upload/{{name}}/path={{ path_value }}/" method="POST">
+            {% csrf_token %}
+            <input type="file" name="upload" />
+            <br/>
+            上传人<input type="text" name="username" placeholder="输入上传作者"></input>
+            <br>
+            类型<select name="content_type" id="">
+                <option value="海洋">海洋</option>
+                <option value="赤潮">赤潮</option>
+                <option value="台风">台风</option>
+
+            </select>
+            <br>
+{#            <input type="date">#}
+            <br>
+            文件类型<select name="file_type" id="">
+            <option value="tx">tx</option>
+            <option value="txt">txt</option>
+            <option value="csv">csv</option>
+            <option value="xlsx">xlsx</option>
+            <br>
+            <input type="text" name="introduce" placeholder="文字简单描述">
+        </select>
+            <br>
+            <input type="submit" value="上传"/>
+
+        </form>
+
+        <br>
+
+
+
+
+        <form action="/save/delete/{{name}}/path={{ path_value }}/" method="post">
+            <input type="text" name="delete" id="delete" class="more_input" placeholder="输入删除文件路径" >
+            <button class="more_button"> 删除</button>
+        </form>
+{#    {% endif %}#}
+{#    <a href="/save/search/">#}
+
+
+
+</div>
+</div>
+</body>
+</html>
+
+
+
+
+
+{#<!DOCTYPE html>#}
+{#<html lang="en">#}
+{#<head>#}
+{#    <!-- Basic Page Needs#}
+{#    ================================================== -->#}
+{#    <meta charset="utf-8">#}
+{#    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->#}
+{#    <meta name="viewport" content="width=device-width, initial-scale=1">#}
+{#    <title>国家海洋信息中心大数据管理平台</title>#}
+{#    <meta name="description" content="Your Description Here">#}
+{#    <meta name="keywords" content="free boostrap, bootstrap template, freebies, free theme, free website, free portfolio theme, portfolio, personal, cv">#}
+{#    <meta name="author" content="Jenn, ThemeForces.com">#}
+{##}
+{#    <!-- Favicons#}
+{#    ================================================== -->#}
+{#    <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon">#}
+{#    <link rel="apple-touch-icon" href="/static/img/apple-touch-icon.png">#}
+{#    <link rel="apple-touch-icon" sizes="72x72" href="/static/img/apple-touch-icon-72x72.png">#}
+{#    <link rel="apple-touch-icon" sizes="114x114" href="/static/img/apple-touch-icon-114x114.png">#}
+{##}
+{#    <!-- Bootstrap -->#}
+{#    <link rel="stylesheet" type="text/css"  href="/static/css/bootstrap.css">#}
+{#    <link rel="stylesheet" type="text/css" href="/static/font-awesome-4.2.0/css/font-awesome.css">#}
+{#    <link rel="stylesheet" type="text/css" href="/static/css/jasny-bootstrap.min.css">#}
+{#    <link rel="stylesheet" type="text/css" href="/static/css/animate.css">#}
+{##}
+{#    <!-- Slider#}
+{#    ================================================== -->#}
+{#    <link href="/static/css/owl.carousel.css" rel="stylesheet" media="screen">#}
+{#    <link href="/static/css/owl.theme.css" rel="stylesheet" media="screen">#}
+{##}
+{#    <!-- Stylesheet#}
+{#    ================================================== -->#}
+{#    <link rel="stylesheet" type="text/css"  href="/static/css/style.css">#}
+{#    <link rel="stylesheet" type="text/css" href="/static/css/responsive.css">#}
+{##}
+{##}
+{#    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>#}
+{##}
+{#    <script type="text/javascript" src="/static/js/modernizr.custom.js"></script>#}
+{##}
+{#    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->#}
+{#    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->#}
+{#    <!--[if lt IE 9]>#}
+{#      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>#}
+{#      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>#}
+{#    <![endif]-->#}
+{#</head>#}
+{#<body background="/static/img/bg11.jpg" style="position:absolute; left:0px; top:0px; width:100%; height:100%">#}
+{##}
+{##}
+{#<!-- Off Canvas Navigation#}
+{#================================================== -->#}
+{#<div class="navmenu navmenu-default navmenu-fixed-left offcanvas"> <!--- Off Canvas Side Menu -->#}
+{#    <div class="close" data-toggle="offcanvas" data-target=".navmenu">#}
+{#        <span class="fa fa-close"></span>#}
+{#    </div>#}
+{#    <div class="add-margin"></div>#}
+{#    <ul class="nav navmenu-nav"> <!--- Menu -->#}
+{#        <li><a href="/online/index/" class="page-scroll">主页</a></li>#}
+{#        <li><a href="#meet-us" class="page-scroll">个人信息</a></li>#}
+{#        <li><a href="http://202.199.10.22:8080 " target="_blank" >spark高性能集群</a></li>#}
+{#        <li><a href="http://202.199.10.22:50070" target="_blank" >hadoop集群信息</a></li>#}
+{#        <li><a href="#contact" >使用教程</a></li>#}
+{#    </ul><!--- End Menu -->#}
+{#</div> <!--- End Off Canvas Side Menu -->#}
+{##}
+{#<!-- Home Section -->#}
+{#<div id="home">#}
+{#    <div class="container text-center">#}
+{#        <!-- Navigation -->#}
+{#        <nav id="menu" data-toggle="offcanvas" data-target=".navmenu">#}
+{#            <span class="fa fa-bars"></span>#}
+{#        </nav>#}
+{##}
+{##}
+{##}
+{##}
+{#    </div>#}
+{#</div>#}
+{##}
+{##}
+{##}
+{#<h3 style="text-align:right">welcome {{username}} {{ level }}!</h3>#}
+{#<div class="center_save">#}
+{#    <div class="title_hdfs">Browse Directory</div>#}
+{#    <hr style="border: 1px #EBEBEB solid;"><br>#}
+{#    <div class="dhfs_show">#}
+{#        <form action="/save/hdfsfile/{{name}}/" method="post" class="dhfs_form">#}
+{#            <input type="text" name="filepath" id="filepath" class="hdfs_input" placeholder="{{path_value}}" >#}
+{#            <button class="hdfs_button"> GO！</button><br><br>#}
+{#            {% if error %}<div class="show_error" style="color: red;margin-left: 10px;">Error：{{error}}</div>{% endif %}#}
+{#            {% if more %}<div class="show_error">【详情】当前路径：{{path_value}}<br>【包括】:</div>{% endif %}#}
+{#        </form>#}
+{#        <table class="bordered">#}
+{#            <tr style="font-weight: bolder;font-size: 16px;">#}
+{#                <td>Permission</td><td>Owner</td><td>Group</td><td>Replication</td><td>Length</td>#}
+{#                <td>BlockSize</td><td>Type</td><td>Children<br>Num</td><td>FileId</td><td>Name</td><td>Action</td>#}
+{#            </tr>#}
+{#            {% for mess in mess_list %}#}
+{#                <tr>#}
+{#                    <td>{{mess.permission}}</td><td>{{mess.owner}}</td><td>{{mess.group}}</td><td>{{mess.replication}}</td><td>{{mess.length}}</td><td>{{mess.blockSize}}</td>#}
+{#                    <td>{{mess.type}}</td><td>{{mess.childrenNum}}</td><td>{{mess.fileId}}</td><td><a href="/save/file/{{name}}/path={{ mess.path }}/">{{ mess.path }}</a></td>#}
+{#                    <td><a href="/save/more/{{name}}/path={{ mess.path }}/">查看详情/其他操作</a></td>#}
+{#                </tr>#}
+{#            {%endfor %}#}
+{#        </table>#}
+{#        {% if root_more and not error %}#}
+{#            <div class="show_error">我要对目录【{{path_value}} 】 进行操作：#}
+{#                <a href="/save/more/{{name}}/path={{ path_value }}/" style="background-color: sandybrown">CLICK</a></div>#}
+{#            </div>#}
+{#        {% endif %}#}
+{#</div>#}
+{##}
+{#<div class="dhfs_show">#}
+{#    {% if more %}#}
+{#        <div class="show_error">&nbsp;&nbsp;目录【{{path_value}} 】 的具体信息：</div>#}
+{#        <div class="more">#}
+{#            <table class="bordered">#}
+{#                <tr style="font-weight: bolder;">#}
+{#                    {% for k,v in more_mess.items %}#}
+{#                        <td>{{ k }}</td>#}
+{#                    {% endfor %}#}
+{#                </tr>#}
+{#                <tr>#}
+{#                    {% for k,v in more_mess.items %}#}
+{#                        <td>{{ v }}</td>#}
+{#                    {% endfor %}#}
+{#                </tr>#}
+{#            </table>#}
+{#            <div class="show_error">&nbsp;&nbsp;目录【{{path_value}} 】 的具体操作:#}
+{#                <button class="more_button" style="margin-left: 20px;"><a href="/save/delete/{{name}}/path={{ path_value }}">删除</a></button>#}
+{#            </div>#}
+{#            <p></p>#}
+{#        </div>#}
+{#        <br>#}
+{#        <form action="/save/rename/{{name}}/path={{ path_value}}/" method="post">#}
+{#            <input type="text" name="rename" id="rename" class="more_input" placeholder="输入新的文件夹名字" >#}
+{#            <button class="more_button"> 重命名</button>#}
+{#        </form>#}
+{#        <br>#}
+{#        <form action="/save/mkdir/{{name}}/path={{ path_value }}/" method="post">#}
+{#            <input type="text" name="mkdir" id="mkdir" class="more_input" placeholder="输入新的子目录名字" >#}
+{#            <button class="more_button">创建</button>#}
+{#        </form>#}
+{#        <br>#}
+{#        <form action="/save/down/{{name}}/path={{ path_value }}/" method="post">#}
+{#            <input type="text" name="download" id="download" class="more_input" placeholder="输入下载路径" >#}
+{#            <button class="more_button"> 下载</button>#}
+{#        </form>#}
+{#        <br>#}
+{#        <form action="/save/upload/{{name}}/path={{ path_value }}/" method="post">#}
+{#            <input type="text" name="up" id="up" class="more_input" placeholder="输入上传文件路径" >#}
+{#            <button class="more_button"> 上传</button>#}
+{#            <br/>#}
+{#        </form>#}
+{#        <br>#}
+{##}
+{##}
+{##}
+{##}
+{#        <form enctype="multipart/form-data" action="/save/upload/{{name}}/path={{ path_value }}/" method="POST">#}
+{#            {% csrf_token %}#}
+{#            <input type="file" name="upload" />#}
+{#            <br/>#}
+{#            <input type="submit" value="上传"/>#}
+{#        </form>#}
+{#        <br>#}
+{##}
+{#        <form enctype="multipart/form-data" action="/app01/upload/" method="POST">#}
+{#            {% csrf_token %}#}
+{#            <input type="file" name="upload" />#}
+{#            <br/>#}
+{#            <input type="submit" value="上传"/>#}
+{#        </form>#}
+{#        <br>#}
+{##}
+{#        <form action="/save/delete/{{name}}/path={{ path_value }}/" method="post">#}
+{#            <input type="text" name="delete" id="delete" class="more_input" placeholder="输入删除文件路径" >#}
+{#            <button class="more_button"> 删除</button>#}
+{#        </form>#}
+{#    {% endif %}#}
+{#</div>#}
+{#</div>#}
+{##}
+{##}
+{##}
+{##}
+{##}
+{##}
+{##}
+{##}
+{#<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->#}
+{#<script src="/static/js/jquery.min.js"></script>#}
+{#<script type="text/javascript" src="/static/js/jquery.1.11.1.js"></script>#}
+{#<!-- Include all compiled plugins (below), or include individual files as needed -->#}
+{#<script type="text/javascript" src="/static/js/bootstrap.js"></script>#}
+{##}
+{#<script type="text/javascript" src="/static/js/jasny-bootstrap.min.js"></script>#}
+{##}
+{#<script src="/static/js/owl.carousel.js"></script>#}
+{#<script src="/static/js/typed.js"></script>#}
+{##}
+{##}
+{#<!-- Javascripts#}
+{#================================================== -->#}
+{##}
+{##}
+{#</body>#}
+{#</html>#}

@@ -1,0 +1,110 @@
+
+<!doctype html>
+<html lang="ch">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content=" 大数据资源池系统">
+    <meta name="keywords" content="  大数据 资源 管理 ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title> 大数据资源池系统</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-2.1.4.min.js"></script>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/static/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css" />
+    <script>
+        $(function() {
+        })
+    </script>
+
+</head>
+<body>
+<form action="/online/permissioncrm/" method="POST">
+    {%csrf_token%}
+    {#     返回错误提示信息  #}
+    {% if message %}
+        <div class="alert alert-warning">{{ message }}</div>
+    {% endif %}
+    <table class="table table-striped table-bordered">
+
+        <tr>
+            <td class="hidden"><input name = "id" value="{{permissiondetail.id}}"></td>
+            <td>名称&nbsp;&nbsp;
+                <input name = "name" value="{{permissiondetail.name}}" required>
+            </td>
+            <td>  文件资源&nbsp;&nbsp;
+                <input type="radio" name="wenjianziyuan" value="1"> 显示 &nbsp;&nbsp;
+                <input type="radio" name="wenjianziyuan" value="0" checked > 隐藏
+            </td>
+            <td>hbase数据库&nbsp;&nbsp;
+                <input type="radio" name="hbaseshujuku" value="1" > 显示 &nbsp;&nbsp;
+                <input type="radio" name="hbaseshujuku"  value="0" checked > 隐藏
+            </td>
+            <td>模型算法&nbsp;&nbsp;
+                <input type="radio" name="moxingsuanfa" value="1" > 显示 &nbsp;&nbsp;
+                <input type="radio" name="moxingsuanfa"  value="0" checked > 隐藏
+            </td>
+{#            <td>首页&nbsp;&nbsp;#}
+{#                <input type="radio" name="shouye" value="1"#}
+{#                       {% if permissiondetail.shouye == '1' %}checked {% endif %}> 显示 &nbsp;&nbsp;#}
+{#                <input type="radio" name="shouye"  value="0"#}
+{#                       {% if permissiondetail.shouye == '0' %}checked {% endif %}> 隐藏#}
+{#            </td>#}
+        </tr>
+        <tr><th colspan="5"></th><tr>
+        <tr>
+            <td>资源管理&nbsp;&nbsp;
+                <input type="radio" name="ziyuanguanli" value="1" > 显示 &nbsp;&nbsp;
+                <input type="radio" name="ziyuanguanli"  value="0" checked > 隐藏
+            </td>
+            <td>资源查询&nbsp;&nbsp;
+                <input type="radio" name="ziyuanchaxun" value="1" > 显示 &nbsp;&nbsp;
+                <input type="radio" name="ziyuanchaxun"  value="0" checked > 隐藏
+            </td>
+            <td>集群查看&nbsp;&nbsp;
+                <input type="radio" name="jiqunchakan" value="1" > 显示 &nbsp;&nbsp;
+                <input type="radio" name="jiqunchakan"  value="0" checked > 隐藏
+            </td>
+            <td>算法资源&nbsp;&nbsp;
+                <input type="radio" name="suanfaziyuan" value="1" > 显示 &nbsp;&nbsp;
+                <input type="radio" name="suanfaziyuan"  value="0" checked > 隐藏
+            </td>
+            <td>模型资源&nbsp;&nbsp;
+                <input type="radio" name="moxingziyuan" value="1" > 显示 &nbsp;&nbsp;
+                <input type="radio" name="moxingziyuan"  value="0" checked > 隐藏
+            </td>
+        </tr>
+        <tr><th colspan="5"></th><tr>
+        <tr>
+            <td>算法查询&nbsp;&nbsp;
+                <input type="radio" name="suanfachaxun" value="1" > 显示 &nbsp;&nbsp;
+                <input type="radio" name="suanfachaxun"  value="0" checked > 隐藏
+            </td>
+            <td>演示&nbsp;&nbsp;
+                <input type="radio" name="yanshi" value="1" > 显示 &nbsp;&nbsp;
+                <input type="radio" name="yanshi"  value="0" checked > 隐藏
+            </td>
+            <td>提交&nbsp;&nbsp;
+                <input type="radio" name="tijao" value="1" > 显示 &nbsp;&nbsp;
+                <input type="radio" name="tijao"  value="0" checked > 隐藏
+            </td>
+            <td>数据库&nbsp;&nbsp;
+                <input type="radio" name="shujuku" value="1" > 显示 &nbsp;&nbsp;
+                <input type="radio" name="shujuku"  value="0" checked > 隐藏
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td colspan="5" style="text-align: center">
+                <input type="submit" value="保存">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="button" onclick="javascript:history.back(-1);" value="返回上一页"><br>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

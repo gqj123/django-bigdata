@@ -1,0 +1,72 @@
+
+<!doctype html>
+<html lang="ch">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content=" 大数据资源池系统">
+    <meta name="keywords" content="  大数据 资源 管理 ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title> 大数据资源池系统</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-2.1.4.min.js"></script>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/static/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css" />
+    <script>
+        $(function() {
+            $("#rolename option[value='{{ userdetail.role.id }}']").prop("selected","selected");
+            $("#rolename").change(function(){
+                var roleid = $("#rolename").val()
+                $.ajax({
+                    url:"/ajax/",
+                    type:"POST",
+                    data:{roleid:roleid},
+                    success:function(data){
+                        //console.log(data)
+                        $("input[name='permissiondetailname']").val(data)
+                    }
+                })
+            })
+
+        })
+    </script>
+
+</head>
+<body>
+<form action="/online/usercrm/" method="POST">
+    {%csrf_token%}
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr> <th>用户名</th><th>密码</th> <th>角色</th> <th>权限</th> </tr>
+        </thead>
+        {% if userdetail %}
+        <tr>
+            <td class="hidden"><input name = "id" value="{{userdetail.id}}"></td>
+            <td><input name = "usename" value="{{userdetail.username}}"></td>
+            <td><input name = "password" value="{{userdetail.password}}"></td>
+            <td>
+    {#            <input name = "rolename" value="{{userdetail.role.rolename}}">#}
+                <select name="rolename" id = "rolename">
+                    {% for x in rolelist %}
+                        <option value ="{{ x.id }}">{{ x.rolename }}</option>
+                    {% endfor %}
+                </select>
+            </td>
+            <td><input name = "permissiondetailname" value="{{userdetail.role.permission.name}}"></td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td colspan="4" style="text-align: center">
+                <input type="submit" value="保存">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="button" onclick="javascript:history.back(-1);" value="返回上一页"><br>
+            </td>
+        </tr>
+        {% endif %}
+    </table>
+</form>
+</body>
+</html>

@@ -1,34 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="Zh-hans" >
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>国家海洋信息中心管理系统</title>
 </head>
 
-<body>
-<h1>   欢迎使用家海洋信息息中心数据管理系统</h1>
-<h2>HDFS文件管理系统</h2>
-<h3>welcome {{name}} {{ level }}!</h3>
-<div class="center_save">
-    <div class="title_hdfs">Browse Directory</div>
-    <hr style="border: 1px #EBEBEB solid;"><br>
-    <div class="dhfs_show">
+<body background="/static/img/bg11.jpg" style=" background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+">
+<h1 align="center">   欢迎使用家海洋信息息中心数据管理系统</h1>
+<h2 align="center">HDFS文件管理系统</h2>
+<h3 align="right">welcome {{name}} {{ level }}!</h3>
+<div class="center_save" style=" text-align:center;">
+    <div class="title_hdfs">浏览文件夹</div>
+
+    <div class="dhfs_show",align="center">
         <form action="/save/hdfsfile/{{name}}/" method="post" class="dhfs_form">
             <input type="text" name="filepath" id="filepath" class="hdfs_input" placeholder="{{path_value}}" >
-            <button class="hdfs_button"> GO！</button><br><br>
+            <button class="hdfs_button"> 前往</button>
+            <a href="{% url 'search' %}">
+                {#    <a href="/save/search" target="_blank" >#}
+                <input type=button value="查询文件" style="width:200px;height:30px;">
+            </a>
+            <br>
+
+            <br>
             {% if error %}<div class="show_error" style="color: red;margin-left: 10px;">Error：{{error}}</div>{% endif %}
             {% if more %}<div class="show_error">【详情】当前路径：{{path_value}}<br>【包括】:</div>{% endif %}
         </form>
-        <table class="bordered">
+        <table class="bordered" align="center">
             <tr style="font-weight: bolder;font-size: 16px;">
-                <td>Permission</td><td>Owner</td><td>Group</td><td>Replication</td><td>Length</td>
-                <td>BlockSize</td><td>Type</td><td>Children<br>Num</td><td>FileId</td><td>Name</td><td>Action</td>
+                <td>文件名</td><td>副本数</td><td>子目录数</td><td>操作</td>
             </tr>
             {% for mess in mess_list %}
                 <tr>
-                    <td>{{mess.permission}}</td><td>{{mess.owner}}</td><td>{{mess.group}}</td><td>{{mess.replication}}</td><td>{{mess.length}}</td><td>{{mess.blockSize}}</td>
-                    <td>{{mess.type}}</td><td>{{mess.childrenNum}}</td><td>{{mess.fileId}}</td><td><a href="/save/file/{{name}}/path={{ mess.path }}/">{{ mess.path }}</a></td>
+                    <td><a href="/save/file/{{name}}/path={{ mess.path }}/">{{ mess.path }}</a></td>
+                    <td>{{mess.replication}}</td>
+                    <td>{{mess.childrenNum}}</td>
+
+{#                    <td>{{mess.fileId}}</td><td>{{mess.owner}}</td><td>{{mess.group}}</td><td>{{mess.replication}}</td><td>{{mess.length}}</td><td>{{mess.blockSize}}</td>#}
+{#                    <td>{{mess.type}}</td><td>{{mess.childrenNum}}</td><td>{{mess.fileId}}</td><td><a href="/save/file/{{name}}/path={{ mess.path }}/">{{ mess.path }}</a></td>#}
                     <td><a href="/save/more/{{name}}/path={{ mess.path }}/">查看详情/其他操作</a></td>
                 </tr>
             {%endfor %}
@@ -40,11 +53,11 @@
         {% endif %}
 </div>
 
-<div class="dhfs_show">
-    {% if more %}
+<div class="dhfs_show" style=" text-align:center;">
+{#    {% if more %}#}
         <div class="show_error">&nbsp;&nbsp;目录【{{path_value}} 】 的具体信息：</div>
         <div class="more">
-            <table class="bordered">
+            <table class="bordered" align="center">
                 <tr style="font-weight: bolder;">
                     {% for k,v in more_mess.items %}
                         <td>{{ k }}</td>
@@ -62,6 +75,12 @@
             <p></p>
         </div>
         <br>
+
+    <a href="{% url 'search' %}">
+        {#    <a href="/save/search" target="_blank" >#}
+        <input type=button value="查询文件" style="width:200px;height:30px;">
+    </a>
+
         <form action="/save/rename/{{name}}/path={{ path_value}}/" method="post">
             <input type="text" name="rename" id="rename" class="more_input" placeholder="输入新的文件夹名字" >
             <button class="more_button"> 重命名</button>
@@ -77,11 +96,6 @@
             <button class="more_button"> 下载</button>
         </form>
         <br>
-        <form action="/save/upload/{{name}}/path={{ path_value }}/" method="post">
-            <input type="text" name="up" id="up" class="more_input" placeholder="输入上传文件路径" >
-            <button class="more_button"> 上传</button>
-            <br/>
-        </form>
         <br>
 
 
@@ -89,25 +103,46 @@
 
         <form enctype="multipart/form-data" action="/save/upload/{{name}}/path={{ path_value }}/" method="POST">
             {% csrf_token %}
-            <input type="file" name="upload" />
+            <input type="file"  multiple="" webkitdirectory="" name="upload" />
             <br/>
+            上传人<input type="text" name="username" placeholder="输入上传作者"></input>
+            <br>
+            类型<select name="content_type" id="">
+                <option value="海洋">海洋</option>
+                <option value="赤潮">赤潮</option>
+                <option value="台风">台风</option>
+
+            </select>
+            <br>
+{#            <input type="date">#}
+            <br>
+            文件类型<select name="file_type" id="">
+            <option value="tx">tx</option>
+            <option value="txt">txt</option>
+            <option value="csv">csv</option>
+            <option value="xlsx">xlsx</option>
+            <br>
+            <input type="text" name="introduce" placeholder="文字简单描述">
+        </select>
+            <br>
             <input type="submit" value="上传"/>
+
         </form>
+
         <br>
 
-{#        <form enctype="multipart/form-data" action="/app01/upload/" method="POST">#}
-{#            {% csrf_token %}#}
-{#            <input type="file" name="upload" />#}
-{#            <br/>#}
-{#            <input type="submit" value="上传"/>#}
-{#        </form>#}
-{#        <br>#}
+
+
 
         <form action="/save/delete/{{name}}/path={{ path_value }}/" method="post">
             <input type="text" name="delete" id="delete" class="more_input" placeholder="输入删除文件路径" >
             <button class="more_button"> 删除</button>
         </form>
-    {% endif %}
+{#    {% endif %}#}
+{#    <a href="/save/search/">#}
+
+
+
 </div>
 </div>
 </body>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content=" 大数据资源管理平台">
+    <meta name="keywords" content="  大数据 资源 管理 ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+
+    <script src="/static/js/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css" />
+<style type="text/css">
+
+    table caption{
+        text-align: center;
+        font-size: large;
+    }
+    table tr td{
+        width: 10%;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+
+    <div class="table-responsive">
+
+      <table class="table table-striped table-bordered table-hover" style="margin-top: 20px;">
+          {% if objects %}
+                {% if tableName == 'WL' %}
+                    <caption>WL</caption>
+                    <tr> <td>序号</td><td>时间</td><td>纬度</td> <td>经度</td> <td>水位（cm）</td> </tr>
+                    {% for object in objects %}
+                        <tr> <td>{{  forloop.counter }}</td><td>{{ object.time}}</td><td>{{ object.lat }}</td><td>{{ object.lon }}</td><td>{{ object.w_level }}</td> </tr>
+                    {% endfor %}
+                {% elif tableName == 'STATION_CUR' %}
+                    <caption>STATION_CUR</caption>
+                    <tr> <td>序号</td><td>时间</td><td>纬度</td> <td>经度</td> <td>深度</td><td>流向</td> <td>温度</td> </tr>
+                    {% for object in objects %}
+                        <tr> <td>{{ forloop.counter }}</td><td>{{ object.time}}</td><td>{{ object.lat }}</td><td>{{ object.lon }}</td><td>{{ object.depth }}</td><td>{{ object.direction }}</td><td>{{ object.speed }}</td> </tr>
+                    {% endfor %}
+
+                {% elif tableName == 'AT' %}
+                    <caption>AT</caption>
+                    <tr> <td>序号</td><td>时间</td><td>纬度</td> <td>经度</td> <td>海面气温</td> </tr>
+                    {% for object in objects %}
+                        <tr> <td>{{ forloop.counter }}</td><td>{{ object.time}}</td><td>{{ object.lat }}</td><td>{{ object.lon }}</td> <td>{{ object.a_temperature }}</td> </tr>
+                    {% endfor %}
+                {% elif tableName == 'WIND' %}
+                    <caption>WIND</caption>
+                    <tr> <td>序号</td><td>时间</td><td>纬度</td> <td>经度</td> <td>风向</td> <td>风速</td> </tr>
+                    {% for object in objects %}
+                        <tr> <td>{{ forloop.counter }}</td><td>{{ object.time}}</td><td>{{ object.lat }}</td><td>{{ object.lon }}</td> <td>{{ object.direction }}</td><td>{{ object.speed }}</td> </tr>
+                    {% endfor %}
+                {% elif tableName == 'SST' %}
+                    <caption>SST</caption>
+                    <tr> <td>序号</td><td>时间</td><td>纬度</td> <td>经度</td> <td>海面水温</td> </tr>
+                    {% for object in objects %}
+                        <tr> <td>{{  forloop.counter }}</td><td>{{ object.time}}</td><td>{{ object.lat }}</td><td>{{ object.lon }}</td><td>{{ object.w_temperature }}</td> </tr>
+                    {% endfor %}
+                {% elif tableName == 'SLP' %}
+                    <caption>SLP</caption>
+                    <tr> <td>序号</td><td>时间</td><td>纬度</td> <td>经度</td> <td>海面气压</td> </tr>
+                    {% for object in objects %}
+                        <tr> <td>{{ forloop.counter }}</td><td>{{ object.time}}</td><td>{{ object.lat }}</td><td>{{ object.lon }}</td> <td>{{ object.pressure }}</td> </tr>
+                    {% endfor %}
+                {% endif %}
+          {% else %}
+              这里还没有数据
+          {% endif %}
+      </table>
+
+    </div>
+</body>
+</html>

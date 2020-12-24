@@ -1,0 +1,347 @@
+/home/spark/anaconda3/bin/python3: can't find '__main__' module in '/home/spark/dat/'
+/home/spark/anaconda3/bin/python3: can't find '__main__' module in '/home/spark/dat/'
+/home/spark/anaconda3/bin/python3: can't find '__main__' module in '/home/spark/dat/'
+/home/spark/anaconda3/bin/python3: can't find '__main__' module in '/home/spark/dat/'
+Error: Cannot load main class from JAR file:/home/spark/dat/
+Run with --help for usage help or --verbose for debug output
+/home/spark/anaconda3/bin/python3: can't find '__main__' module in '/home/spark/dat/'
+/home/spark/anaconda3/bin/python3: can't find '__main__' module in '/home/spark/dat/'
+/home/spark/anaconda3/bin/python3: can't find '__main__' module in '/home/spark/dat/'
+/home/spark/anaconda3/bin/python3: can't find '__main__' module in '/home/spark/dat/'
+/home/spark/anaconda3/bin/python3: can't find '__main__' module in '/home/spark/dat/'
+/home/spark/anaconda3/bin/python3: can't find '__main__' module in '/home/spark/dat/'
+Error: Cannot load main class from JAR file:/home/spark/dat/
+Run with --help for usage help or --verbose for debug output
+Error: Cannot load main class from JAR file:/home/spark/dat/
+Run with --help for usage help or --verbose for debug output
+Error: Cannot load main class from JAR file:/home/spark/dat/
+Run with --help for usage help or --verbose for debug output
+python3: can't open file '/home/spark/dat/pyspark_lielianbiao.py': [Errno 2] No such file or directory
+Error: Cannot load main class from JAR file:/home/spark/dat/
+Run with --help for usage help or --verbose for debug output
+Error: Cannot load main class from JAR file:/home/spark/dat/
+Run with --help for usage help or --verbose for debug output
+Error: Cannot load main class from JAR file:/home/spark/dat/
+Run with --help for usage help or --verbose for debug output
+Error: Cannot load main class from JAR file:/home/spark/dat/
+Run with --help for usage help or --verbose for debug output
+Error: Cannot load main class from JAR file:/home/spark/dat/
+Run with --help for usage help or --verbose for debug output
+Error: Cannot load main class from JAR file:/home/spark/dat/
+Run with --help for usage help or --verbose for debug output
+Error: Cannot load main class from JAR file:/home/spark/dat/
+Run with --help for usage help or --verbose for debug output
+Error: Cannot load main class from JAR file:/home/spark/dat/
+Run with --help for usage help or --verbose for debug output
+/home/spark/anaconda3/bin/python3: can't find '__main__' module in '/home/spark/dat/'
+python3: can't open file '/home/spark/dat/pyspark_apriori.py': [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "/home/spark/dat/svr_sel1.py", line 45, in <module>
+    svr_sel("hdfs:///master:9000/kj/delta_data.csv","hdfs:///kj/www1",kernel="rbf",predict_column="longitude")
+  File "/home/spark/dat/svr_sel1.py", line 8, in svr_sel
+    data=pd.read_csv(input_path)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 440, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 787, in __init__
+    self._make_engine(self.engine)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1014, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1708, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 384, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 695, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: File b'hdfs:///master:9000/kj/delta_data.csv' does not exist
+Traceback (most recent call last):
+  File "/home/spark/dat/svr_sel1.py", line 45, in <module>
+    svr_sel("hdfs:///master:9000/kj/delta_data.csv","hdfs:///kj/www1",kernel="rbf",predict_column="longitude")
+  File "/home/spark/dat/svr_sel1.py", line 8, in svr_sel
+    data=pd.read_csv(input_path)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 440, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 787, in __init__
+    self._make_engine(self.engine)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1014, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1708, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 384, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 695, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: File b'hdfs:///master:9000/kj/delta_data.csv' does not exist
+Traceback (most recent call last):
+  File "/home/spark/dat/svr_sel1.py", line 45, in <module>
+    svr_sel("hdfs:///master:9000/kj/delta_data.csv","hdfs:///kj/www1",kernel="rbf",predict_column="longitude")
+  File "/home/spark/dat/svr_sel1.py", line 8, in svr_sel
+    data=pd.read_csv(input_path)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 440, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 787, in __init__
+    self._make_engine(self.engine)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1014, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1708, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 384, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 695, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: File b'hdfs:///master:9000/kj/delta_data.csv' does not exist
+Traceback (most recent call last):
+  File "/home/spark/dat/svr_sel1.py", line 45, in <module>
+    svr_sel("hdfs:///master:9000/kj/delta_data.csv","hdfs:///kj/www1",kernel="rbf",predict_column="longitude")
+  File "/home/spark/dat/svr_sel1.py", line 8, in svr_sel
+    data=pd.read_csv(input_path)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 440, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 787, in __init__
+    self._make_engine(self.engine)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1014, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1708, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 384, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 695, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: File b'hdfs:///master:9000/kj/delta_data.csv' does not exist
+Traceback (most recent call last):
+  File "/home/spark/dat/svr_sel1.py", line 45, in <module>
+    svr_sel("hdfs:///master:9000/kj/delta_data.csv","hdfs:///kj/www1",kernel="rbf",predict_column="longitude")
+  File "/home/spark/dat/svr_sel1.py", line 8, in svr_sel
+    data=pd.read_csv(input_path)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 440, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 787, in __init__
+    self._make_engine(self.engine)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1014, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1708, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 384, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 695, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: File b'hdfs:///master:9000/kj/delta_data.csv' does not exist
+Traceback (most recent call last):
+  File "/home/spark/dat/svr_sel.py", line 45, in <module>
+    mean_error, absolute_error = svr_sel("hdfs:///SHU2/data/input_data/delta_data.csv","hdfs:///SHU2/data/output_data/delta_result.csv",kernel="rbf",predict_column="longitude")
+  File "/home/spark/dat/svr_sel.py", line 8, in svr_sel
+    data=pd.read_csv(input_path)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 440, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 787, in __init__
+    self._make_engine(self.engine)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1014, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1708, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 384, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 695, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: File b'hdfs:///SHU2/data/input_data/delta_data.csv' does not exist
+Traceback (most recent call last):
+  File "/home/spark/dat/svr_sel.py", line 45, in <module>
+    mean_error, absolute_error = svr_sel("hdfs:///SHU2/data/input_data/delta_data.csv","hdfs:///SHU2/data/output_data/delta_result.csv",kernel="rbf",predict_column="longitude")
+  File "/home/spark/dat/svr_sel.py", line 8, in svr_sel
+    data=pd.read_csv(input_path)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 440, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 787, in __init__
+    self._make_engine(self.engine)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1014, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1708, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 384, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 695, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: File b'hdfs:///SHU2/data/input_data/delta_data.csv' does not exist
+Traceback (most recent call last):
+  File "/home/spark/dat/svr_sel.py", line 45, in <module>
+    mean_error, absolute_error = svr_sel("hdfs:///SHU2/data/input_data/delta_data.csv","hdfs:///SHU2/data/output_data/delta_result.csv",kernel="rbf",predict_column="longitude")
+  File "/home/spark/dat/svr_sel.py", line 8, in svr_sel
+    data=pd.read_csv(input_path)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 440, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 787, in __init__
+    self._make_engine(self.engine)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1014, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1708, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 384, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 695, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: File b'hdfs:///SHU2/data/input_data/delta_data.csv' does not exist
+Traceback (most recent call last):
+  File "/home/spark/dat/svr_sel.py", line 45, in <module>
+    mean_error, absolute_error = svr_sel("hdfs:///SHU2/data/input_data/delta_data.csv","hdfs:///SHU2/data/output_data/delta_result.csv",kernel="rbf",predict_column="longitude")
+  File "/home/spark/dat/svr_sel.py", line 8, in svr_sel
+    data=pd.read_csv(input_path)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 440, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 787, in __init__
+    self._make_engine(self.engine)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1014, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1708, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 384, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 695, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: File b'hdfs:///SHU2/data/input_data/delta_data.csv' does not exist
+Traceback (most recent call last):
+  File "/home/spark/dat/svr_sel.py", line 45, in <module>
+    mean_error, absolute_error = svr_sel("hdfs:///SHU2/data/input_data/delta_data.csv","hdfs:///SHU2/data/output_data/delta_result.csv",kernel="rbf",predict_column="longitude")
+  File "/home/spark/dat/svr_sel.py", line 8, in svr_sel
+    data=pd.read_csv(input_path)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 440, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 787, in __init__
+    self._make_engine(self.engine)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1014, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1708, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 384, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 695, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: File b'hdfs:///SHU2/data/input_data/delta_data.csv' does not exist
+Traceback (most recent call last):
+  File "/home/spark/dat/svr_sel.py", line 45, in <module>
+    mean_error, absolute_error = svr_sel("hdfs:///SHU2/data/input_data/delta_data.csv","hdfs:///SHU2/data/output_data/delta_result.csv",kernel="rbf",predict_column="longitude")
+  File "/home/spark/dat/svr_sel.py", line 8, in svr_sel
+    data=pd.read_csv(input_path)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 440, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 787, in __init__
+    self._make_engine(self.engine)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1014, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1708, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 384, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 695, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: File b'hdfs:///SHU2/data/input_data/delta_data.csv' does not exist
+Traceback (most recent call last):
+  File "/home/spark/dat/svr_sel.py", line 45, in <module>
+    mean_error, absolute_error = svr_sel("hdfs:///SHU2/data/input_data/delta_data.csv","hdfs:///SHU2/data/output_data/delta_result.csv",kernel="rbf",predict_column="longitude")
+  File "/home/spark/dat/svr_sel.py", line 8, in svr_sel
+    data=pd.read_csv(input_path)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 440, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 787, in __init__
+    self._make_engine(self.engine)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1014, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1708, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 384, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 695, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: File b'hdfs:///SHU2/data/input_data/delta_data.csv' does not exist
+Traceback (most recent call last):
+  File "/home/spark/dat/svr_sel.py", line 45, in <module>
+    mean_error, absolute_error = svr_sel("hdfs:///SHU2/data/input_data/delta_data.csv","hdfs:///SHU2/data/output_data/delta_result.csv",kernel="rbf",predict_column="longitude")
+  File "/home/spark/dat/svr_sel.py", line 8, in svr_sel
+    data=pd.read_csv(input_path)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 440, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 787, in __init__
+    self._make_engine(self.engine)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1014, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1708, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 384, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 695, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: File b'hdfs:///SHU2/data/input_data/delta_data.csv' does not exist
+Traceback (most recent call last):
+  File "/home/spark/dat/svr_sel.py", line 45, in <module>
+    mean_error, absolute_error = svr_sel("hdfs:///SHU2/data/input_data/delta_data.csv","hdfs:///SHU2/data/output_data/delta_result.csv",kernel="rbf",predict_column="longitude")
+  File "/home/spark/dat/svr_sel.py", line 8, in svr_sel
+    data=pd.read_csv(input_path)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 678, in parser_f
+    return _read(filepath_or_buffer, kwds)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 440, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 787, in __init__
+    self._make_engine(self.engine)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1014, in _make_engine
+    self._engine = CParserWrapper(self.f, **self.options)
+  File "/home/spark/anaconda3/lib/python3.6/site-packages/pandas/io/parsers.py", line 1708, in __init__
+    self._reader = parsers.TextReader(src, **kwds)
+  File "pandas/_libs/parsers.pyx", line 384, in pandas._libs.parsers.TextReader.__cinit__
+  File "pandas/_libs/parsers.pyx", line 695, in pandas._libs.parsers.TextReader._setup_parser_source
+FileNotFoundError: File b'hdfs:///SHU2/data/input_data/delta_data.csv' does not exist
+  File "/home/spark/dat/svr_sel.py", line 23
+SyntaxError: Non-ASCII character '\xe5' in file /home/spark/dat/svr_sel.py on line 23, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details
+  File "/home/spark/dat/svr_sel.py", line 23
+SyntaxError: Non-ASCII character '\xe5' in file /home/spark/dat/svr_sel.py on line 23, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details
+  File "/home/spark/dat/svr_sel.py", line 23
+SyntaxError: Non-ASCII character '\xe5' in file /home/spark/dat/svr_sel.py on line 23, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details
+  File "/home/spark/dat/pcaxiaobo.py", line 127
+SyntaxError: Non-ASCII character '\xe7' in file /home/spark/dat/pcaxiaobo.py on line 127, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details
+python2: can't open file '/home/spark/dat/lstm.py': [Errno 2] No such file or directory
+Traceback (most recent call last):
+  File "/home/spark/dat/pyspark_lielianbiao.py", line 1, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+/usr/bin/python2: can't find '__main__' module in '/home/spark/dat/'
+Traceback (most recent call last):
+  File "/home/spark/dat/pyspark_lielianbiao.py", line 1, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+Traceback (most recent call last):
+  File "/home/spark/dat/pyspark_lielianbiao.py", line 1, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+Traceback (most recent call last):
+  File "/home/spark/dat/pyspark_apriori7.py", line 2, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+  File "/home/spark/dat/Spark_ARIMA.py", line 17
+SyntaxError: Non-ASCII character '\xe8' in file /home/spark/dat/Spark_ARIMA.py on line 17, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details
+  File "/home/spark/dat/Spark_ARIMA.py", line 16
+SyntaxError: Non-ASCII character '\xe8' in file /home/spark/dat/Spark_ARIMA.py on line 16, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details
+  File "/home/spark/dat/Spark_ARIMA.py", line 16
+SyntaxError: Non-ASCII character '\xe8' in file /home/spark/dat/Spark_ARIMA.py on line 16, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details
+  File "/home/spark/dat/Spark_ARIMA.py", line 16
+SyntaxError: Non-ASCII character '\xe8' in file /home/spark/dat/Spark_ARIMA.py on line 16, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details
+  File "/home/spark/dat/Spark_ARIMA.py", line 16
+SyntaxError: Non-ASCII character '\xe8' in file /home/spark/dat/Spark_ARIMA.py on line 16, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details
+  File "/home/spark/dat/Spark_ARIMA.py", line 16
+SyntaxError: Non-ASCII character '\xe8' in file /home/spark/dat/Spark_ARIMA.py on line 16, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details
+  File "/home/spark/dat/Spark_ARIMA.py", line 16
+SyntaxError: Non-ASCII character '\xe8' in file /home/spark/dat/Spark_ARIMA.py on line 16, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details
+  File "/home/spark/dat/Spark_ARIMA.py", line 16
+SyntaxError: Non-ASCII character '\xe8' in file /home/spark/dat/Spark_ARIMA.py on line 16, but no encoding declared; see http://www.python.org/peps/pep-0263.html for details
+Traceback (most recent call last):
+  File "/home/spark/dat/pyspark_apriori.py", line 2, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+Traceback (most recent call last):
+  File "/home/spark/dat/pyspark_apriori.py", line 2, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+Traceback (most recent call last):
+  File "/home/spark/dat/pyspark_apriori.py", line 2, in <module>
+    import pandas as pd
+ImportError: No module named pandas
+Traceback (most recent call last):
+  File "/home/spark/dat/pyspark_apriori.py", line 2, in <module>
+    import pandas as pd
+ImportError: No module named pandas

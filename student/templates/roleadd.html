@@ -1,0 +1,55 @@
+
+<!doctype html>
+<html lang="ch">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content=" 大数据资源池系统">
+    <meta name="keywords" content="  大数据 资源 管理 ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title> 大数据资源池系统</title>
+    <script src="/static/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/static/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css" />
+    <script>
+
+    </script>
+
+</head>
+<body>
+        <form method = 'post' action="/online/rolecrm/" enctype="multipart/form-data">
+            {%csrf_token%}
+            {#     返回错误提示信息  #}
+            {% if message %}
+                <div class="alert alert-warning">{{ message }}</div>
+            {% endif %}
+
+            <table class="table table-striped table-bordered">
+                <tr>
+                    <td><label for="rolename">角色名称</label></td>
+                    <td><input type="text" name="rolename" id="rolename" required/></td>
+                </tr>
+                <tr>
+                    <td><label for="roleId">权限</label></td>
+                    <td>
+                        <select name="permissionid" id = "permissionid">
+                            {% for x in permissionlist %}
+                                <option value ="{{ x.id }}">{{ x.name }}</option>
+                            {% endfor %}
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center">
+                        <input type="submit" id="save" value="保存">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="button" onclick="javascript:history.back(-1);" value="返回上一页"><br>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+</body>
+</html>

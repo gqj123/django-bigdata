@@ -1,0 +1,125 @@
+
+    <div class="leftMeun" id="leftMeun"  style="overflow-y:auto;">
+        <div id="logoDiv">
+            <p id="logoP"><img id="logo" alt="管理中心" src="/static/img/logo.png"><span>数据资源</span></p>
+        </div>
+        <div class="childleft dropdown">
+            <ul style="padding-left: 0px;margin-bottom: 0px;" >
+            {% if  request.COOKIES.wenjianziyuan == '1' %}
+                <li class="firstli"> <button type="button" class="btn col-lg-12" > HDFS文件<b class="caret" style="margin-left: 10px;"></b></button>
+
+                    <ul class="secul">
+                        <li class="secli" title="file_0"><a href="{% url 'filedata' '0' %}" target="myframe">文件样本(1)</a></li>
+                        <li class="secli" title="file_1"><a href="{% url 'filedata' '1' %}" target="myframe">文件样本(2)</a></li>
+	        
+                    </ul>
+                </li>
+            {% endif %}
+            {% if  request.COOKIES.hbaseshujuku == '1' %}
+                <li class="firstli"> <button type="button" class="btn col-lg-12">Hbase数据库<b class="caret" style="margin-left: 10px;"></b></button>
+
+                    <ul class="secul">
+                        <li class="secli" title="WL"><a href="{% url 'hbaseTable' 'WL' %}"  target="myframe">水位</a></li>
+                        <li class="secli" title="PSAL"><a href="{% url 'hbaseTable' 'PSAL' %}"  target="myframe">盐度</a></li>
+                        <li class="secli" title="STATION_CUR"><a href="{% url 'hbaseTable' 'STATION_CUR' %}"  target="myframe">定点海流</a></li>
+
+                    </ul>
+                </li>
+            {% endif %}
+{#            {% if  request.COOKIES.moxingziyuan == '1' %}#}
+{#                <li class="firstli"> <button type="button" class="btn col-lg-12" >模型算法<b class="caret" style="margin-left: 10px;"></b></button>#}
+{##}
+{#                    <ul class="secul">#}
+{#                        <li class="secli" title="1"><a href="{% url 'function' '分类方法' %}"  target="myframe"> 分类方法</a></li>#}
+{#                        <li class="secli" title="2"><a href="{% url 'function' '单时间序列预测' %}"  target="myframe"> 时间序列预测</a></li>#}
+{#                        <li class="secli" title="3"><a href="{% url 'function' '关联分析' %}"  target="myframe">关联分析</a></li>#}
+{#                        <li class="secli" title="4"><a href="{% url 'function' '聚类方法' %}"  target="myframe">聚类方法</a></li>#}
+{#                        <li class="secli" title="5"><a href="{% url 'function' '路径预测' %}"  target="myframe">路径预测</a></li>#}
+{#	                    <li class="secli" ><a href="http://221.239.0.181:5000">可视化分析</a></li>#}
+{#                    </ul>#}
+{#                </li>#}
+{#            {% endif %}#}
+            </ul>
+        </div>
+    </div>
+
+<script type="text/javascript">
+    $(function () {
+        /*
+        var items = document.getElementsByTagName('li');
+        for(var i=0;i<items.length;i++){
+            items[i].index = i;
+            //ltems[i].removeClass("active")
+            items[i].onclick = function(){
+                $(this).addClass("active")
+                $(this).siblings().removeClass("active");
+            }
+        }
+
+       str = "{{ tableName }}"
+        $("li").each(function () {
+            if (str != "" && $(this).attr('title') == str){
+                $(this).addClass("active")
+            }
+        })
+        */
+        //目前只有这个管用
+         id = "{{ file_code }}"
+         $("li").each(function () {
+             if (id != "" && $(this).attr('title') == id) {
+                 $(this).addClass("active")
+             }
+         })
+        /*
+        v = "{{ v }}"
+        $("li").each(function () {
+            if (v !="" && $(this).attr('title') == v) {
+                $(this).addClass("active")
+            }
+        })
+        */
+        $(".childleft").find(".secul").hide().find(".active").parents().show()
+        $(".secli").click(function (event) {
+            //$(this).siblings().removeClass("active");
+            $(this).parents().children().find(".secli").removeClass("active");
+            $(this).addClass("active")
+            event.stopPropagation();
+
+            $(".fli").each(function(){
+                $(this).removeClass("active")
+            });
+            $(".secondli").each(function(){
+                $(this).removeClass("active")
+            });
+        })
+        $(".firstli").click(function () {
+            //$(this).siblings().children().find(".secli").removeClass("active");
+           // $(this).siblings().find(".firstli").slideUp();
+
+             $(this).children(".secul").slideToggle();
+            //$(this).slideDown();
+            //alert("")
+        })
+
+    })
+</script>
+    <style type="text/css">
+        .childleft .firstli {
+            font-size: medium;
+            margin-top: 0px;padding-top: 0px;
+        }
+
+        .childleft .secli {
+            font-size: medium;
+            color: white;
+            margin-left: -24px;
+            text-align: center;
+        }
+        .childleft .active{
+            background-color: #3366bc;
+        }
+
+        .secli a {
+            color: white;
+        }
+    </style>

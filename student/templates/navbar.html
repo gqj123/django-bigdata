@@ -1,0 +1,117 @@
+<nav class="navbar" role="navigation" style="background: #2B69b4;margin-bottom: 0px;">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" style="margin-left: 4px;" href="/online/index/">资源管理</a>
+            </div>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li class="fli active"><a href="/online/index1/" target="myframe">首页</a></li>
+                {% if  request.COOKIES.ziyuanguanli == '1' %}
+                    <li class="fli"><a href="/save/hdfsfile/username/" target="myframe">资源管理</a></li>
+                {% endif %}
+                {% if  request.COOKIES.ziyuanchaxun == '1' %}
+                    <li class="fli"><a href="/save/search/" target="myframe">资源查询</a></li>
+                {% endif %}
+{#                    <li class="fli dropdown">#}
+{#                        <a href="#" class="dropdown-toggle" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">集群查看 <span class="caret"></span></a>#}
+{#                        <ul class="dropdown-menu">#}
+{#                            <li class="secondli dropdown-li"><a href="http://221.239.0.181:8080/" target="_blank">Spark集群</a></li>#}
+{#                            <li class="secondli dropdown-li"><a href="http://221.239.0.181:50070/" target="_blank">Hadoop集群</a></li>#}
+{#                            <li class="secondli dropdown-li"><a href="http://221.239.0.181:16010/" target="_blank">Hbase集群</a></li>#}
+{##}
+{#                        </ul>#}
+{#                    </li>#}
+{#                {% if  request.COOKIES.suanfaziyuan == '1' %}#}
+{#                    <li class="fli dropdown">#}
+{#                        <a href="#" class="dropdown-toggle" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">算法资源 <span class="caret"></span></a>#}
+{#                        <ul class="dropdown-menu">#}
+{#                            {% if  request.COOKIES.moxingziyuan == '1' %}#}
+{#                                <li class="secondli dropdown-li"><a href="{% url 'function' '单时间序列预测' %}" target="myframe">模型资源</a></li>#}
+{#                            {% endif %}#}
+{#                            {% if  request.COOKIES.suanfachaxun == '1' %}#}
+{#                                <li class="secondli dropdown-li"><a href="/save/function_search/" target="myframe">算法查询</a></li>#}
+{#                            {% endif %}#}
+{#                        </ul>#}
+{#                      </li>#}
+{#                {% endif %}#}
+{#                    <li {% if chooseIndex == '6' %} class="active" {% endif %}><a href="/updatesystem/">资源索引</a></li>#}
+                {% if  request.COOKIES.shujuku == '1' %}
+                    <li  class="fli dropdown">
+                        <a href="#" class="dropdown-toggle" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">HBase数据<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li class="secondli dropdown-li"><a href="/hbaseTable/WL" target="myframe">查询</a></li>
+{#                            <li class="dropdown-li"><a href="#">导入</a></li>#}
+                        </ul>
+                    </li>
+                {% endif %}
+                    {% if username == 'admin' %}
+                        <li class="fli dropdown">
+                            <a href="#" class="dropdown-toggle" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">用户管理<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li class="secondli dropdown-li"><a href="/online/usercrm/" target="myframe">用户信息</a></li>
+                                <li class="secondli dropdown-li"><a href="/online/rolecrm/" target="myframe">角色信息</a></li>
+                                <li class="secondli dropdown-li"><a href="/online/permissioncrm/" target="myframe">权限信息</a></li>
+                            </ul>
+                        </li>
+                    {% endif %}
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<div style="float: right;">
+    <ul style="position: absolute!important;right: 0;top: 40px;">
+        <li style="color: white"> <img src="/static/img/user1.png" class="user-image"> {{ username }}</li>
+        <li style="text-align: center"><a href="/online/logout/">退出</a></li>
+    </ul>
+</div>
+<script src="/static/js/jquery.cookie.js"></script>
+<script type="text/javascript">
+    $(function () {
+
+
+        $(".fli").click(function () {
+            $(this).addClass("active")
+            $(this).siblings(".fli").removeClass("active");
+            $(".secli").each(function(){
+                $(this).removeClass("active")
+            });
+            $(".secul").each(function(){
+                $(this).slideUp();
+            });
+        });
+        $(".secondli").click(function (event) {
+            //$(this).siblings().removeClass("active");
+            $(this).parents().children().find(".secondli").removeClass("active");
+            $(this).parents().find(".fli").removeClass("active");
+            $(this).addClass("active")
+            $(this).parent(".fli").addClass("active")
+           // event.stopPropagation();
+        });
+
+        });
+</script>
+<style type="text/css">
+    .dropdown-menu{
+        margin-top: 0px !important;
+    }
+    .dropdown-li{
+        background:url('/static/img/bg-01.png');
+        text-align: center;
+        height:40px !important;
+        width: 100%;
+        border-top: 2px solid rgba(9,9,247, 0.6);
+    }
+    .user-image {
+        float: left;
+        width: 30px;
+        height: 30px;
+        margin-left: 10px;
+        border-radius: 50%;
+        margin-right: 5px;
+        margin-top: 10px;
+    }
+</style>
+   <script src="/static/js/bootstrap-hover-dropdown.min.js"></script>
+
+

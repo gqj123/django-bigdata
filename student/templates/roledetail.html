@@ -1,0 +1,56 @@
+
+<!doctype html>
+<html lang="ch">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content=" 大数据资源池系统">
+    <meta name="keywords" content=" 大数据 资源 管理 ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title> 大数据资源池系统</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-2.1.4.min.js"></script>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/static/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css" />
+    <script>
+        $(function() {
+            $("#permissionid option[value='{{ roledetail.permission.id }}']").prop("selected","selected");
+        })
+    </script>
+
+</head>
+<body>
+<form action="/online/rolecrm/" method="POST">
+    {%csrf_token%}
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr> <th>角色名称</th><th>权限</th></tr>
+        </thead>
+        {% if roledetail %}
+        <tr>
+            <td class="hidden"><input name = "id" value="{{roledetail.id}}"></td>
+            <td><input name = "rolename" value="{{roledetail.rolename}}"></td>
+            <td>
+                <select name="permissionid" id = "permissionid">
+                    {% for x in permissionlist %}
+                        <option value ="{{ x.id }}">{{ x.name }}</option>
+                    {% endfor %}
+                </select>
+            </td>
+        </tr>
+        <tr></tr>
+        <tr>
+            <td colspan="3" style="text-align: center">
+                <input type="submit" value="保存">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="button" onclick="javascript:history.back(-1);" value="返回上一页"><br>
+            </td>
+        </tr>
+        {% endif %}
+    </table>
+</form>
+</body>
+</html>

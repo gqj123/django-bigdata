@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ch">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content=" 大数据资源管理平台">
+    <meta name="keywords" content="  大数据 资源 管理 ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title> 大数据资源池</title>
+    <script src="/static/js/jquery.min.js"></script>
+
+    <!--[if lt IE 9]>
+  <script src="/static/js/html5shiv.min.js"></script>
+  <script src="/static/js/respond.min.js"></script>
+<![endif]-->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/slide.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/flat-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/jquery.nouislider.css">
+    <script src="/static/js/jquery.cookie.js"></script>
+    <script>
+    </script>
+</head>
+
+<body>
+<div style="height:100%;width: 100%;background: #eff3f6 bottom;">
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <!-- 资源管理模块 -->
+        <div role="tabpanel" class="tab-pane active" id="sour">
+        <!-- Tab panes -->
+                <div class="data-div">
+                    <div class="tablebody">
+                        <table class="bordered" width="95%" border="0" cellpadding="2" cellspacing="1" >
+                            <tr style="font-weight: bolder;font-size: 16px;">
+                                <td colspan="15" style="text-align: right">
+                                    <button><a href="/online/permissioncrm/?type=add">新增权限</a></button>
+                                </td>
+                            </tr>
+
+                            <tr style="font-weight: bolder;font-size: 16px;	color: #646987;background-color: #e3e8ee;">
+                                <td>名称ss {{ request.COOKIES.permission }}</td>
+                                <td>文件资源</td><td>hbase数据库</td><td>模型算法</td>
+{#                                <td>首页</td>#}
+                                <td>资源管理</td><td>资源查询</td><td>集群查看</td><td>算法资源</td>
+                                <td>模型资源</td><td>算法查询</td><td>演示</td><td>提交</td><td>数据库</td>
+                                <td>操作</td>
+                            </tr>
+                        {% if permissionlist %}
+                            {% for permission in permissionlist %}
+                                <tr>
+                                    <td>{{permission.name}}</td>
+                                    <td>{% if permission.wenjianziyuan == '1' %}显示{% else %}隐藏{% endif %}</td>
+                                    <td>{% if permission.hbaseshujuku == '1' %}显示{% else %}隐藏{% endif %}</td>
+                                    <td>{% if permission.moxingsuanfa == '1' %}显示{% else %}隐藏{% endif %}</td>
+{#                                    <td>{% if permission.shouye == '1' %}显示{% else %}隐藏{% endif %}</td>#}
+                                    <td>{% if permission.ziyuanguanli == '1' %}显示{% else %}隐藏{% endif %}</td>
+                                    <td>{% if permission.ziyuanchaxun == '1' %}显示{% else %}隐藏{% endif %}</td>
+                                    <td>{% if permission.jiqunchakan == '1' %}显示{% else %}隐藏{% endif %}</td>
+
+                                    <td>{% if permission.suanfaziyuan == '1' %}显示{% else %}隐藏{% endif %}</td>
+                                    <td>{% if permission.moxingziyuan == '1' %}显示{% else %}隐藏{% endif %}</td>
+                                    <td>{% if permission.suanfachaxun == '1' %}显示{% else %}隐藏{% endif %}</td>
+                                    <td>{% if permission.yanshi == '1' %}显示{% else %}隐藏{% endif %}</td>
+                                    <td>{% if permission.tijao == '1' %}显示{% else %}隐藏{% endif %}</td>
+                                    <td>{% if permission.shujuku == '1' %}显示{% else %}隐藏{% endif %}</td>
+
+                                    <td>
+{#                                        <a href="/online/usercrm/?type=check&id= '{{ user.id }}' ">查看</a>#}
+                                        <a href="/online/permissioncrm/?type=modify&id= {{ permission.id }}">修改</a>
+                                        <a href="/online/permissioncrm/?type=delete&id= '{{ permission.id }}'"
+                                        onclick="if(confirm('确定删除用户信息吗？')==false) return false;">删除</a>
+                                    </td>
+                                </tr>
+                            {%endfor %}
+                            {% else %}
+                        {% endif %}
+                        </table>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+ </body>
+
+</html>

@@ -1,0 +1,285 @@
+
+<!doctype html>
+<html lang="ch">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content=" 大数据资源管理平台">
+    <meta name="keywords" content="  大数据 资源 管理 ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title> 大数据资源池</title>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+  <script src="/static/js/html5shiv.min.js"></script>
+  <script src="/static/js/respond.min.js"></script>
+<![endif]-->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/slide.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/flat-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/jquery.nouislider.css">
+</head>
+<style type="text/css">
+    .tile_demo{
+        position: relative;
+        top: 0%;
+        width: 100%;
+        height: 90px;
+        background-size: cover;
+        background-position: center;
+        background-image: url("/static/img/titile.jpg");
+    }
+</style>
+
+<body>
+<div class="tile_demo">
+</div>
+{% include "navbar.html" %}
+
+
+<div id="wrap">
+    <!-- 左侧菜单栏目块 -->
+    {% include "leftMenu.html" %}
+    <div id="rightContent">
+        <a class="toggle-btn" id="nimei">
+            <i class="glyphicon glyphicon-align-justify"></i>
+        </a>
+
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <!-- 资源管理模块 -->
+            <div role="tabpanel" class="tab-pane active" id="sour">
+                <div class="check-div form-inline">
+                    <button class="btn btn-yellow btn-xs" data-toggle="modal" data-target="#addSource">添加路径</button>
+                </div>
+                <div class="data-div">
+                    <div class="tablebody">
+{#                        <br class="bordered" width="95%" border="0" cellpadding="2" cellspacing="1" style="table-layout:fixed;">#}
+{#                            <tr style="font-weight: bolder;font-size: 16px;	color: #646987;background-color: #e3e8ee;">#}
+{#                                <td>文件名</td><td>副本数</td><td>子目录数</td><td>操作</td>#}
+{#                            </tr>#}
+                            <br enctype="multipart/form-data" action="{% url 'updatesystem' %}" method="post">
+                                {% csrf_token %}
+
+
+                                数据来源：<select style = "width:70px;" name="seldnsname" id="systemname">
+                                <option value ="请选择">请选择</option>
+                                {% for dnsnames in dnsnamelist %}
+                                    <option value ={{ dnsnames.data_soure }}>{{ dnsnames.data_soure }}</option>
+                                {% endfor %}
+                            </select>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp数据分类1：<select   style = "width:70px;" name="selhostipaddrs" id="hostnames">
+                                <option value ="请选择">请选择</option>
+                            </select>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                数据分类2：<select   style = "width:70px;" name="selhostipaddrs1" id="hostnames1">
+                                <option value ="请选择">请选择</option>
+                            </select>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                数据年份：<select style = "width:70px;" name="selhostipaddrs2" id="hostnames2">
+                                <option value ="请选择">请选择</option>
+                            </select>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                数据月份：<select style = "width:70px;" name="selhostipaddrs3" id="hostnames3">
+                                <option value ="请选择">请选择</option>
+                        </select>
+
+                                文件名称：<select style = "width:70px;"  name="selhostipaddrs4" id="hostnames4">
+                                <option value ="请选择">请选择</option>
+                            </select>
+                            </br>
+                            <a>跳转：</a>
+                                &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                                <a name="selhostipaddrs5" id="hostnames5"
+                                   target="_blank">
+                                    {{ content }}</a>
+                                {#<h3 name="selhostipaddrs5" id="hostnames5">content</h3>#}
+{#                                <input type="submit" value="更新应用" />#}
+{#                                </br>#}
+                                </br>
+                                <img alt="" class="img2 png" style="height:100%;width: 100%" src="/static/img/back_1.jpg">
+{#                                </br>#}
+                                <h4 style="color: red"><b>{{ login_err }}</b></h4>
+
+                                <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+                                <script language="JavaScript">
+                                    $("#systemname").change(function() {
+                                        var data_soure = $(this).val();
+                                        {#alert("welcome");#}
+                                        $.ajax({
+                                            url: '/getipaddr/',
+
+                                            data:{"seldnsname":$(this).val()},
+                                            type: 'GET',
+                                            dataType: 'json',
+                                            success: function (data) {
+                                                var content='';
+                                                content+='<option value='+"start"+'>'+"start"+'</option>'
+                                                $.each(data, function(i, item){
+                                                    content+='<option value='+item.class1+'>'+item.class1+'</option>'
+                                                });
+                                                $('#hostnames').html(content)
+                                            },
+
+                                        });
+                                    });
+                                    $("#hostnames").change(function() {
+                                        var class1 = $(this).val();
+                                        {#alert("welcome");#}
+                                        $.ajax({
+                                            url: '/getipaddr1/',
+
+                                            data: {"selhostipaddrs": $(this).val()},
+                                            type: 'GET',
+                                            dataType: 'json',
+                                            success: function (data1) {
+                                                var content = '';
+                                                content+='<option value='+"start"+'>'+"start"+'</option>'
+                                                $.each(data1, function (i, item) {
+                                                    content += '<option value=' + item.class2 + '>' + item.class2 + '</option>'
+                                                });
+
+                                                $('#hostnames1').html(content)
+                                            },
+
+                                        });
+                                    });
+
+
+                                    $("#hostnames1").change(function() {
+                                        var class2 = $(this).val();
+                                        {#alert("welcome");#}
+                                        $.ajax({
+                                            url: '/getipaddr2/',
+                                            data: {"selhostipaddrs1": $(this).val()},
+                                            type: 'GET',
+                                            dataType: 'json',
+                                            success: function (data2) {
+                                                var content = '';
+                                                content+='<option value='+"start"+'>'+"start"+'</option>'
+                                                $.each(data2, function (i, item) {
+                                                    content += '<option value=' + item.time_year+ '>' + item.time_year + '</option>'
+
+
+                                                });
+                                                $('#hostnames2').html(content)
+                                            },
+
+                                        });
+                                    });
+                                    $("#hostnames2").change(function() {
+                                        var time_year = $(this).val();
+                                        {#alert("welcome");#}
+                                        $.ajax({
+                                            url: '/getipaddr3/',
+
+                                            data: {"selhostipaddrs2": $(this).val()},
+                                            type: 'GET',
+                                            dataType: 'json',
+                                            success: function (data3) {
+                                                var content = '';
+                                                content+='<option value='+"start"+'>'+"start"+'</option>'
+                                                $.each(data3, function (i, item) {
+                                                    content += '<option value=' + item.time_month+ '>' + item.time_month + '</option>'
+                                                });
+
+
+                                                $('#hostnames3').html(content)
+                                            },
+
+                                        });
+                                    });
+                                    $("#hostnames3").change(function() {
+                                        var time_month = $(this).val();//从html中获取time_month
+                                        var class1 = $("#hostnames").find("option:selected").text()
+                                        var class2 = $("#hostnames1").find("option:selected").text()
+                                        var time_year = $("#hostnames").find("option:selected").text()
+                                        {#alert("welcome");#}
+                                        $.ajax({                        //初始化ajax请求
+                                            url: '/getipaddr4/',        //设置请求地址
+
+                                            data: {"selhostipaddrs3": $(this).val(),
+                                                "selhostipaddrs2": $("#hostnames2").find("option:selected").text(),
+                                                "selhostipaddrs1": $("#hostnames1").find("option:selected").text(),
+                                                "selhostipaddrs": $("#hostnames").find("option:selected").text()
+                                            },
+                                            type: 'GET',
+                                            dataType: 'json',
+                                            success: function (data4) { //视图函数返回到data4
+                                                var content = '';
+                                                content+='<option value='+"start"+'>'+"start"+'</option>'
+                                                $.each(data4, function (i, item) {
+                                                    content += '<option value=' + item.filename+ '>' + item.filename + '</option>'
+                                                });
+
+                                                $('#hostnames4').html(content)//用返回的数据代替下拉框中的内容
+                                            },
+
+                                        });
+                                    });
+                                    $("#hostnames4").change(function() {
+                                        var filename = $(this).val();
+                                        {#alert("welcome");#}
+                                        $.ajax({
+                                            url: '/getipaddr5/',
+
+                                            data: {"selhostipaddrs4": $(this).val()},
+                                            type: 'GET',
+                                            dataType: 'json',
+                                            success: function (data5) {
+                                                var content = '';
+                                                $.each(data5, function (i, item) {
+                                                    {#content += '<option value=' + item.path+ '>' + item.path + '</option>'#}
+                                                    content = item.path
+
+                                                    {#var a =<a href="http://221.239.0.201:50070/explorer.html#" target="_blank">动态链接</a>#}
+
+                                                    {#$("body").append(a);//动态创建的A#}
+                                                });
+                                                $("#hostnames5").attr("href", "http://221.239.0.181:8000/save/file/username/path=" + content);
+                                                $('#hostnames5').html(content)
+                                            },
+
+                                        });
+                                    });
+
+                                </script>
+
+                            </form>
+                    </div>
+                </div>
+                <div class="modal fade" id="addSource" role="dialog" aria-labelledby="gridSystemModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="gridSystemModalLabel">添加路径</h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <form enctype="multipart/form-data" class="form-horizontal" action="/addpath/" method="POST">
+                                        {% csrf_token %}
+                                        在资源查看界面中路径
+                                        <div class="form-group">
+                                            <label for="sLink" class="col-xs-3 control-label">上传路径：</label>
+                                            <div class="col-xs-8 ">
+                                                <input type="text" name="path1" class="form-control input-sm duiqi" id="sLink" placeholder="">
+                                            </div>
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <button  class="btn btn-xs btn-xs btn-green" type="submit" value="上传">提交</button>
+                                        </div>
+                                        {% if message %}
+                                            <div class="alert alert-warning">{{ message }}</div>
+                                        {% endif %}
+                                    </form>
+                                </div>
+                            </div>
+ </body>
+
+</html>
+
+

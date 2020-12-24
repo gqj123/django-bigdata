@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ch">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content=" 大数据资源管理平台">
+    <meta name="keywords" content="  大数据 资源 管理 ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title> 大数据资源池</title>
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-2.1.4.min.js"></script>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <!--[if lt IE 9]>
+  <script src="/static/js/html5shiv.min.js"></script>
+  <script src="/static/js/respond.min.js"></script>
+<![endif]-->
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/static/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/slide.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/flat-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/jquery.nouislider.css">
+</head>
+
+<style type="text/css">
+    .tile_demo{
+        position: relative;
+        top: 0%;
+        width: 100%;
+        height: 90px;
+        background-size: cover;
+        background-position: center;
+        background-image: url("/static/img/titile.jpg");
+    }
+</style>
+
+<body>
+
+    <div class="show" style="padding-left: 1px;">
+        <div class="show_index">
+            <div class="datatitle">
+                <h1>数据样本2</h1>
+                <p >基于海洋环境观测数据，通过海浪、风暴潮、温度、盐度海流等数值预报模型输出的海洋预报数据。</p>
+            </div>
+            <div class="datalist">
+                <div class="datablock">
+{#                <div class="datablock" style="width:30%" onclick="window.open('http://221.239.0.181:8000/save/file/username/path=/data2019/Data/Read-Only/Integrated-Data/Numeric%20-Forecast-Data/HYCOM/')">#}
+                    <h1>HYCOM  </h1>
+                    <a href="/testhdfs/?path=/data2019/Data/Read-Only/Integrated-Data/Numeric%20-Forecast-Data/HYCOM/" target="_blank">HYCOM</a>
+                    <p title="HYCOM由National Ocean Partnership Program (NOPP)提供，下载地址为<https://www.hycom.org/>。垂直方向有33层，包括的变量主要有各层温度、盐度、海水流速，和还表面高度，数据间隔为6h，空间分辨率为0.08°×0.08°。">HYCOM由National Ocean ...</p>
+                </div>
+                <div class="datablock" style="width:30%" onclick="window.open('http://221.239.0.181:8000/save/file/username/path=/data2019/Data/Read-Only/Integrated-Data/Numeric%20-Forecast-Data/GFS_DATA/')">
+                    <h1>GFS  </h1>
+                    <p title="GFS(Global Forcast System) 全球气象预报数据由美国国家环境预报中心NCEP(National Centers for Environmental Prediction)提供，下载地址为<https://dss.ucar.edu/datazone/dsszone/ds083.2>。数据垂直方向有37层，包括的变量主要有各气压层温度、相对湿度、经向和纬度向风速、位势高度等变量，数据间隔为6h，空间分辨率为0.5°×0.5°。 ">全球气象预报数据...</p>
+                </div>
+{#                <div class="datablock" style="width:30%" onclick="window.open('')">#}
+{#                    <h1>OISST  </h1>#}
+{#                    <p title="这是鼠标指上去要显示的内容 ">这是鼠标指上去要显示的...</p>#}
+{#                </div>#}
+            </div>
+        </div>
+    </div>
+</body>
+</html>

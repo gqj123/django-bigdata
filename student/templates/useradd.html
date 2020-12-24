@@ -1,0 +1,76 @@
+
+<!doctype html>
+<html lang="ch">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content=" 大数据资源池系统">
+    <meta name="keywords" content="  大数据 资源 管理 ">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    <title> 大数据资源池系统</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery/jquery-2.1.4.min.js"></script>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/static/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.min.css" />
+    <script>
+
+    </script>
+
+</head>
+<body>
+        <form method = 'post' action="/online/usercrm/" enctype="multipart/form-data">
+            {#     返回错误提示信息  #}
+            {% if message %}
+                <div class="alert alert-warning">{{ message }}</div>
+            {% endif %}
+
+            <table class="table table-striped table-bordered">
+                <tr>
+                    <td><label for="username">名称</label></td>
+                    <td><input type="text" name="username" id="username" required/></td>
+                </tr>
+                <tr>
+                    <td><label for="password">密码</label></td>
+                    <td><input type="password" name="pwd1" id="pwd1" required/></td>
+                </tr>
+                <tr>
+                    <td><label for="pwd2">确认密码</label></td>
+                    <td><input type="password" name="pwd2" id="pwd2" required/></td>
+                </tr>
+                <tr>
+                    <td><label for="employer">工作单位</label></td>
+                    <td><input type="txt" name="employer" id="employer"  style="width:200px"/></td>
+                </tr>
+                <tr>
+                    <td><label for="tel">电话</label></td>
+                    <td><input type="txt" name="tel" id="tel"  style="width:200px"/></td>
+                </tr>
+                <tr>
+                    <td><label for="email">邮箱</label></td>
+                    <td><input type="email" name="email" id="email"  style="width:200px"/></td>
+                </tr>
+                <tr>
+                    <td><label for="roleId">角色</label></td>
+                    <td>
+                        <select name="roleid" id = "roleid">
+                            {% for x in rolelist %}
+                                <option value ="{{ x.id }}">{{ x.rolename }}</option>
+                            {% endfor %}
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center">
+                        <input type="submit" id="save" value="保存">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="button" onclick="javascript:history.back(-1);" value="返回上一页"><br>
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+</body>
+</html>

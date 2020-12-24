@@ -1,0 +1,1191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d8d22200-4dd4-482a-9580-09e684564403" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/media/mypicture/temp9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/online/templates/logout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/save/templates/answer_view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/save/templates/function.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/save/templates/function_exec.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/save/templates/function_search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/save/templates/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/bootstrapValidator.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/common.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/commonCopy.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/flat-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/jquery-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/jquery.nouislider.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/jquery.nouislider.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/slide.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-black.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-black.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-black.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-black.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-bold.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-bold.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-bold.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-bolditalic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-bolditalic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-bolditalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-bolditalic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-italic.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-italic.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-italic.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-light.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-light.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-light.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/Thumbs.db" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/captchaCode.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/circle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/icon_card.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/icon_card_grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/icon_change.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/icon_change_grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/icon_char.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/icon_char_grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/icon_chara.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/icon_chara_grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/icon_house.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/icon_house_grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/icon_rule.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/icon_rule_grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/icon_source.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/icon_source_grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/icon_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/icon_user_grey.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/progress02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/img/titile.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/bootstrapValidator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/html5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.cookie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.nouislider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.nouislider.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/jquery.tips.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/respond.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student/templates/hdfsfile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student/templates/permissionadd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student/templates/permissioncrm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student/templates/permissiondetail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student/templates/roleadd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student/templates/rolecrm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student/templates/roledetail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student/templates/useradd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student/templates/usercrm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/student/templates/userdetail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/django_demo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_demo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_demo/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/django_demo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_demo/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/online/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/online/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/online/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online/templates/regist.html" beforeDir="false" afterPath="$PROJECT_DIR$/online/templates/regist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online/templates/share.html" beforeDir="false" afterPath="$PROJECT_DIR$/online/templates/share.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/online/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/online/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/online/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/save/actionhdfs.py" beforeDir="false" afterPath="$PROJECT_DIR$/save/actionhdfs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/save/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/save/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/save/templates/save.html" beforeDir="false" afterPath="$PROJECT_DIR$/save/templates/save.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/save/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/save/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/save/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/save/views.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/django_sea_finish_7_11$actionhdfs.coverage" NAME="actionhdfs Coverage Results" MODIFIED="1561534670891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/save" />
+    <SUITE FILE_PATH="coverage/django_sea_finish_6_11$views.coverage" NAME="views Coverage Results" MODIFIED="1531189755264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/online" />
+    <SUITE FILE_PATH="coverage/django_sea_finish_20201012$hbasetest.coverage" NAME="hbasetest Coverage Results" MODIFIED="1607569893030" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../hbase数据相关" />
+    <SUITE FILE_PATH="coverage/django_sea_finish_20201012$views__1_.coverage" NAME="views (1) Coverage Results" MODIFIED="1607310338407" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/student" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="Django default" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="identifier.sqlite" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="SQLite - db.sqlite3" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="django_demo_reverise" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="permissiondetail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/student/templates/permissiondetail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="roleadd.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/student/templates/roleadd.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rolecrm.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/student/templates/rolecrm.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="roledetail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/student/templates/roledetail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="showtables.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/student/templates/showtables.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="100">
+              <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="spark_check.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/student/templates/spark_check.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="updatesystem.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/student/templates/updatesystem.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5600">
+              <caret line="280" column="1" selection-start-line="280" selection-start-column="1" selection-end-line="280" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="useradd.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/student/templates/useradd.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="usercrm.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/student/templates/usercrm.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userdetail.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/student/templates/userdetail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+        <option value="HTML4 File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>print</find>
+      <find>meun-item</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="G:/gSoftware/python/Anaconda/location/Lib/site-packages/hbase/ttypes.py" />
+        <option value="$PROJECT_DIR$/save/views.py" />
+        <option value="$PROJECT_DIR$/django_demo/urls.py" />
+        <option value="$PROJECT_DIR$/student/views.py" />
+        <option value="$PROJECT_DIR$/save/actionhdfs.py" />
+        <option value="$PROJECT_DIR$/online/templates/regist1.html" />
+        <option value="$PROJECT_DIR$/save/templates/index.html" />
+        <option value="$PROJECT_DIR$/student/templates/leftMenu.html" />
+        <option value="$PROJECT_DIR$/student/templates/navbar.html" />
+        <option value="$PROJECT_DIR$/online/templates/index.html" />
+        <option value="$PROJECT_DIR$/student/templates/firstpage0.html" />
+        <option value="$PROJECT_DIR$/online/templates/login.html" />
+        <option value="$PROJECT_DIR$/online/templates/logout.html" />
+        <option value="$PROJECT_DIR$/online/templates/regist.html" />
+        <option value="$PROJECT_DIR$/online/templates/share.html" />
+        <option value="$PROJECT_DIR$/save/templates/answer_view.html" />
+        <option value="$PROJECT_DIR$/save/templates/function.html" />
+        <option value="$PROJECT_DIR$/save/templates/function_exec.html" />
+        <option value="$PROJECT_DIR$/save/templates/function_search.html" />
+        <option value="$PROJECT_DIR$/save/templates/regist.html" />
+        <option value="$PROJECT_DIR$/save/templates/save.html" />
+        <option value="$PROJECT_DIR$/save/templates/search.html" />
+        <option value="$PROJECT_DIR$/save/templates/share.html" />
+        <option value="$PROJECT_DIR$/student/templates/firstpage.html" />
+        <option value="$PROJECT_DIR$/student/templates/firstpage1.html" />
+        <option value="$PROJECT_DIR$/student/templates/firstpage2.html" />
+        <option value="$PROJECT_DIR$/student/templates/firstpage3.html" />
+        <option value="$PROJECT_DIR$/student/templates/firstpage4.html" />
+        <option value="$PROJECT_DIR$/student/templates/hbase.html" />
+        <option value="$PROJECT_DIR$/student/templates/hdfsfile.html" />
+        <option value="$PROJECT_DIR$/student/templates/permissionadd.html" />
+        <option value="$PROJECT_DIR$/student/templates/permissioncrm.html" />
+        <option value="$PROJECT_DIR$/student/templates/permissiondetail.html" />
+        <option value="$PROJECT_DIR$/student/templates/roleadd.html" />
+        <option value="$PROJECT_DIR$/student/templates/rolecrm.html" />
+        <option value="$PROJECT_DIR$/student/templates/roledetail.html" />
+        <option value="$PROJECT_DIR$/student/templates/showtables.html" />
+        <option value="$PROJECT_DIR$/student/templates/spark_check.html" />
+        <option value="$PROJECT_DIR$/student/templates/updatesystem.html" />
+        <option value="$PROJECT_DIR$/student/templates/useradd.html" />
+        <option value="$PROJECT_DIR$/student/templates/usercrm.html" />
+        <option value="$PROJECT_DIR$/student/templates/userdetail.html" />
+      </list>
+    </option>
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="H:\0_python\projects\django_sea_finish_6-1\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="JsbtTreeLayoutManager">
+    <layout place="tools.popupGrunt">
+      <scroll-view-position x="0" y="0" />
+    </layout>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="-17" />
+    <option name="y" value="14" />
+    <option name="width" value="1426" />
+    <option name="height" value="1040" />
+  </component>
+  <component name="ProjectId" id="1VXooEU828H8CWZfhNMn5WiqlM8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="django-bigdata" type="b2602c69:ProjectViewProjectNode" />
+              <item name="django-bigdata" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="django-bigdata" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Wands/Desktop/django_sea_finish_6.11/django_sea_finish_6.11/online/templates/regist.html" />
+    <property name="ToolWindowVersion Control.ShowToolbar" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
+    <property name="database.console.LAST_STATE" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\0_python\projects\django_sea_finish_6-1\student\templates" />
+      <recent name="$PROJECT_DIR$/save/templates" />
+      <recent name="C:\Users\Wands\Desktop\django_sea_finish" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\baron\Desktop\django-bigdata\static\img" />
+      <recent name="C:\Users\baron\Desktop\django_sea_finish_20201012\student\templates" />
+      <recent name="C:\Users\baron\Desktop\django_sea_finish_20201012\student" />
+      <recent name="H:\0_python\projects\django_sea_finish_6-1\student\templates" />
+      <recent name="H:\0_python\projects\django_sea_finish_6-1\static\js" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.hbasetest">
+    <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/django_sea_finish_7.11/django_demo/save/templates/index.html" />
+    <configuration name="actionhdfs" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="django_demo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/save" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/save/actionhdfs.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="hbasetest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="django_demo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../hbase数据相关" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../hbase数据相关/hbasetest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="django_demo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/online" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/online/tests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="views (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="django_demo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/student" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/student/views.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="django_demo" type="Python.DjangoServer" factoryName="Django server">
+      <module name="django_demo" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="django_demo.settings" />
+      </envs>
+      <option name="SDK_HOME" value="D:\Program Files\python.exe" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="127.0.0.1" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="http://127.0.0.1:8000/" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="TestNG">
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Django server.django_demo" />
+      <item itemvalue="JavaScript Debug.index.html" />
+      <item itemvalue="Python.actionhdfs" />
+      <item itemvalue="Python.tests" />
+      <item itemvalue="Python.views (1)" />
+      <item itemvalue="Python.hbasetest" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.hbasetest" />
+        <item itemvalue="Python.views (1)" />
+        <item itemvalue="Python.tests" />
+        <item itemvalue="Python.actionhdfs" />
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <option name="contentProportion" value="0.1907336" />
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d8d22200-4dd4-482a-9580-09e684564403" name="Default" comment="" />
+      <created>1526002061542</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1526002061542</updated>
+      <workItem from="1526002066182" duration="17867000" />
+      <workItem from="1526267466621" duration="370000" />
+      <workItem from="1526279040971" duration="6000" />
+      <workItem from="1526279736941" duration="1833000" />
+      <workItem from="1526282337666" duration="11349000" />
+      <workItem from="1526347413327" duration="8837000" />
+      <workItem from="1526455221855" duration="614000" />
+      <workItem from="1526458275110" duration="21948000" />
+      <workItem from="1526609035185" duration="25881000" />
+      <workItem from="1526949617785" duration="3232000" />
+      <workItem from="1527124868489" duration="1247000" />
+      <workItem from="1527126951653" duration="5721000" />
+      <workItem from="1527642943100" duration="1223000" />
+      <workItem from="1527647876549" duration="458000" />
+      <workItem from="1528013164796" duration="3070000" />
+      <workItem from="1528074649883" duration="4153000" />
+      <workItem from="1528202262144" duration="241000" />
+      <workItem from="1528334857241" duration="608000" />
+      <workItem from="1528336678601" duration="753000" />
+      <workItem from="1528338292012" duration="1301000" />
+      <workItem from="1528339672152" duration="11306000" />
+      <workItem from="1528422843699" duration="11044000" />
+      <workItem from="1528507292956" duration="595000" />
+      <workItem from="1528508340621" duration="332000" />
+      <workItem from="1528532550502" duration="601000" />
+      <workItem from="1528543647195" duration="625000" />
+      <workItem from="1528680092673" duration="1332000" />
+      <workItem from="1528681539138" duration="550000" />
+      <workItem from="1528702069625" duration="559000" />
+      <workItem from="1528702811044" duration="3319000" />
+      <workItem from="1528765510526" duration="8261000" />
+      <workItem from="1528851697524" duration="607000" />
+      <workItem from="1528891904066" duration="3089000" />
+      <workItem from="1528940447553" duration="33539000" />
+      <workItem from="1529227508510" duration="7429000" />
+      <workItem from="1529240342816" duration="645000" />
+      <workItem from="1529290685720" duration="3648000" />
+      <workItem from="1529326824672" duration="475000" />
+      <workItem from="1529327540592" duration="784000" />
+      <workItem from="1529328811613" duration="259000" />
+      <workItem from="1529329420026" duration="5553000" />
+      <workItem from="1529418051418" duration="1580000" />
+      <workItem from="1529562392303" duration="78000" />
+      <workItem from="1531144008695" duration="176000" />
+      <workItem from="1531186107948" duration="12931000" />
+      <workItem from="1531272441763" duration="9046000" />
+      <workItem from="1531292951062" duration="1750000" />
+      <workItem from="1531296011279" duration="2445000" />
+      <workItem from="1531531237473" duration="4632000" />
+      <workItem from="1531702717453" duration="763000" />
+      <workItem from="1531812102710" duration="10242000" />
+      <workItem from="1532070696922" duration="35707000" />
+      <workItem from="1532420613447" duration="9811000" />
+      <workItem from="1532489045009" duration="6503000" />
+      <workItem from="1532571274697" duration="20086000" />
+      <workItem from="1540779010259" duration="1269000" />
+      <workItem from="1542969605967" duration="16954000" />
+      <workItem from="1546220330361" duration="2848000" />
+      <workItem from="1546225772158" duration="1993000" />
+      <workItem from="1546392455688" duration="21463000" />
+      <workItem from="1559569196652" duration="90000" />
+      <workItem from="1559569450675" duration="269000" />
+      <workItem from="1559569780762" duration="10000" />
+      <workItem from="1559569838811" duration="4498000" />
+      <workItem from="1560394708204" duration="8969000" />
+      <workItem from="1561276723432" duration="1163000" />
+      <workItem from="1561429764752" duration="294000" />
+      <workItem from="1561430097057" duration="593000" />
+      <workItem from="1561432007095" duration="3060000" />
+      <workItem from="1561447444388" duration="609000" />
+      <workItem from="1561515021751" duration="29960000" />
+      <workItem from="1562145163751" duration="203000" />
+      <workItem from="1562145406966" duration="4726000" />
+      <workItem from="1563173666456" duration="6008000" />
+      <workItem from="1563951806749" duration="578000" />
+      <workItem from="1564642537855" duration="3633000" />
+      <workItem from="1565055552549" duration="3656000" />
+      <workItem from="1565423925253" duration="2979000" />
+      <workItem from="1566788829434" duration="3166000" />
+      <workItem from="1566801806764" duration="2021000" />
+      <workItem from="1575080520886" duration="4977000" />
+      <workItem from="1575088943342" duration="487000" />
+      <workItem from="1575249970280" duration="22984000" />
+      <workItem from="1575594846549" duration="4393000" />
+      <workItem from="1576832497693" duration="4479000" />
+      <workItem from="1576848896646" duration="5773000" />
+      <workItem from="1576889194156" duration="12368000" />
+      <workItem from="1577408666939" duration="5000" />
+      <workItem from="1577408978356" duration="278000" />
+      <workItem from="1577409324107" duration="56000" />
+      <workItem from="1577602666714" duration="67000" />
+      <workItem from="1577949886754" duration="8926000" />
+      <workItem from="1578112623936" duration="66000" />
+      <workItem from="1578404740107" duration="214000" />
+      <workItem from="1578405005150" duration="138000" />
+      <workItem from="1583030497969" duration="465000" />
+      <workItem from="1583846549171" duration="79000" />
+      <workItem from="1584364251993" duration="5972000" />
+      <workItem from="1584418000425" duration="447000" />
+      <workItem from="1584578833854" duration="4524000" />
+      <workItem from="1584597974964" duration="5385000" />
+      <workItem from="1584604923402" duration="6031000" />
+      <workItem from="1584969872361" duration="82000" />
+      <workItem from="1585213579805" duration="2534000" />
+      <workItem from="1585297881150" duration="610000" />
+      <workItem from="1585473168107" duration="13538000" />
+      <workItem from="1585883622652" duration="2347000" />
+      <workItem from="1586061639935" duration="12079000" />
+      <workItem from="1586143361997" duration="23688000" />
+      <workItem from="1586181858960" duration="28000" />
+      <workItem from="1586240364366" duration="8793000" />
+      <workItem from="1586249265708" duration="5394000" />
+      <workItem from="1590911923894" duration="7689000" />
+      <workItem from="1590999499200" duration="27000" />
+      <workItem from="1591010485330" duration="11780000" />
+      <workItem from="1591068914607" duration="169000" />
+      <workItem from="1592301451345" duration="5398000" />
+      <workItem from="1594778766125" duration="1065000" />
+      <workItem from="1594798253385" duration="26404000" />
+      <workItem from="1597800726693" duration="2419000" />
+      <workItem from="1598512319167" duration="808000" />
+      <workItem from="1599551107950" duration="1059000" />
+      <workItem from="1599555531188" duration="9285000" />
+      <workItem from="1600073543565" duration="15688000" />
+      <workItem from="1600163595940" duration="15540000" />
+      <workItem from="1600687771746" duration="1895000" />
+      <workItem from="1600691676783" duration="216000" />
+      <workItem from="1600695063613" duration="277000" />
+      <workItem from="1600695839524" duration="2916000" />
+      <workItem from="1600756221109" duration="29000" />
+      <workItem from="1600775956780" duration="6992000" />
+      <workItem from="1600858714477" duration="1971000" />
+      <workItem from="1600862362734" duration="1865000" />
+      <workItem from="1601032788498" duration="9115000" />
+      <workItem from="1601112291198" duration="4081000" />
+      <workItem from="1601291683650" duration="1558000" />
+      <workItem from="1601295135167" duration="3365000" />
+      <workItem from="1601463728774" duration="617000" />
+      <workItem from="1602500850970" duration="196000" />
+    </task>
+    <task id="LOCAL-00001" summary="finish login and so on">
+      <created>1526284787809</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1526284787809</updated>
+    </task>
+    <task id="LOCAL-00002" summary="finish login and so on">
+      <created>1527128714977</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1527128714978</updated>
+    </task>
+    <task id="LOCAL-00003" summary="finish login and so on">
+      <created>1528076098930</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1528076098930</updated>
+    </task>
+    <task id="LOCAL-00004" summary="finish login and so on">
+      <created>1528202392609</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1528202392609</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50053304" side_tool="true" weight="0.2478355" />
+      <window_info anchor="bottom" id="Database Changes" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.32929516" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38419914" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49946696" visible="true" weight="0.1991342" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26705757" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" weight="0.18763326" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32995737" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Database Console" order="7" weight="0.29545453" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38419914" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19349681" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Database" order="4" weight="0.18763326" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49946696" visible="true" weight="0.19155844" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50053304" side_tool="true" weight="0.2478355" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32995737" />
+      <window_info anchor="bottom" id="Database Console" order="13" weight="0.29545453" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32929516" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="finish login and so on" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish login and so on" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Python.DjangoServer">
+        <watch expression="a" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>level</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>a</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://G:/gSoftware/python/Anaconda/location/Lib/site-packages/django/http/response.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="395" column="8" selection-start-line="395" selection-start-column="8" selection-end-line="395" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/gSoftware/python/Anaconda/location/Lib/site-packages/django/core/handlers/exception.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/gSoftware/python/Anaconda/location/Lib/site-packages/hdfs/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="182" column="6" selection-start-line="182" selection-start-column="6" selection-end-line="182" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://G:/gSoftware/python/Anaconda/location/Lib/site-packages/django/views/decorators/csrf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="48" column="4" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_demo/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="51" column="19" selection-start-line="51" selection-start-column="11" selection-end-line="51" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/save/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="34" selection-start-line="10" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/save/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2420">
+          <caret line="121" column="20" selection-start-line="121" selection-start-column="20" selection-end-line="121" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/sectional.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8940">
+          <caret line="447" column="39" selection-start-line="447" selection-start-column="39" selection-end-line="447" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/save/actionhdfs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="128" column="22" lean-forward="true" selection-start-line="128" selection-start-column="22" selection-end-line="128" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/media/mypicture/temp9.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online/templates/login1.html" />
+    <entry file="file://$PROJECT_DIR$/online/templates/regist1.html" />
+    <entry file="file://$PROJECT_DIR$/save/templates/index.html" />
+    <entry file="file://$PROJECT_DIR$/static/img/titile.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="38" column="47" lean-forward="true" selection-start-line="38" selection-start-column="47" selection-end-line="38" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2961">
+          <caret line="84" column="28" selection-start-line="84" selection-start-column="28" selection-end-line="84" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online/templates/logout.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="98" column="6" lean-forward="true" selection-start-line="98" selection-start-column="6" selection-end-line="98" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online/templates/regist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="143" column="71" selection-start-line="143" selection-start-column="71" selection-end-line="143" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/online/templates/share.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/save/templates/answer_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1101">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/save/templates/function.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3275">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/save/templates/function_exec.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/save/templates/function_search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/save/templates/regist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="639">
+          <caret line="153" column="7" lean-forward="true" selection-start-line="153" selection-start-column="7" selection-end-line="153" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/save/templates/save.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="149" selection-start-line="149" selection-end-line="149" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/save/templates/search.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3235">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/save/templates/share.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="579">
+          <caret line="112" column="65" selection-start-line="112" selection-start-column="65" selection-end-line="112" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templates/firstpage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-815">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templates/firstpage0.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="45" column="20" lean-forward="true" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templates/firstpage1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-115">
+          <caret line="29" column="27" lean-forward="true" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templates/firstpage2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-520">
+          <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templates/firstpage3.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-535">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templates/firstpage4.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-775">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templates/hbase.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3795">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templates/hdfsfile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="39" selection-start-line="9" selection-start-column="39" selection-end-line="9" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templates/leftMenu.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templates/pagination.html" />
+    <entry file="file://$PROJECT_DIR$/student/templates/navbar.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1180">
+          <caret line="59" column="10" lean-forward="true" selection-start-line="59" selection-start-column="10" selection-end-line="59" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templates/permissionadd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templates/permissioncrm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templates/permissiondetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templates/roleadd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templates/rolecrm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templates/roledetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="11" column="12" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templates/showtables.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templates/spark_check.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templates/updatesystem.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5600">
+          <caret line="280" column="1" selection-start-line="280" selection-start-column="1" selection-end-line="280" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templates/useradd.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templates/usercrm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/student/templates/userdetail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
