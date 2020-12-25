@@ -1,0 +1,2 @@
+# django-bigdata
+Django平台集成后台hbase分布式数据库和hdfs文件系统
