@@ -2,117 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d8d22200-4dd4-482a-9580-09e684564403" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/media/mypicture/temp9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/online/templates/logout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/save/templates/answer_view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/save/templates/function.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/save/templates/function_exec.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/save/templates/function_search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/save/templates/search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/bootstrap-theme.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/bootstrapValidator.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/common.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/commonCopy.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/flat-ui.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/jquery-ui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/jquery.nouislider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/jquery.nouislider.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/css/slide.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-black.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-black.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-black.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-bold.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-bold.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-bold.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-bolditalic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-bolditalic.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-bolditalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-bolditalic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-italic.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-italic.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-italic.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-light.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-light.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-light.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/fonts/lato/lato-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/Thumbs.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/captchaCode.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/circle.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/icon_card.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/icon_card_grey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/icon_change.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/icon_change_grey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/icon_char.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/icon_char_grey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/icon_chara.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/icon_chara_grey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/icon_house.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/icon_house_grey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/icon_rule.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/icon_rule_grey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/icon_source.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/icon_source_grey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/icon_user.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/icon_user_grey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/progress02.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/img/titile.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/bootstrapValidator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/html5.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery-ui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.cookie.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.nouislider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.nouislider.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/jquery.tips.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static/js/respond.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/student/templates/hdfsfile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/student/templates/permissionadd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/student/templates/permissioncrm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/student/templates/permissiondetail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/student/templates/roleadd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/student/templates/rolecrm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/student/templates/roledetail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/student/templates/useradd.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/student/templates/usercrm.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/student/templates/userdetail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/django_demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_demo/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_demo/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/django_demo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/django_demo/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/online/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/online/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/online/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online/templates/regist.html" beforeDir="false" afterPath="$PROJECT_DIR$/online/templates/regist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online/templates/share.html" beforeDir="false" afterPath="$PROJECT_DIR$/online/templates/share.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/online/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/online/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/online/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/online/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/save/actionhdfs.py" beforeDir="false" afterPath="$PROJECT_DIR$/save/actionhdfs.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/save/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/save/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/save/templates/save.html" beforeDir="false" afterPath="$PROJECT_DIR$/save/templates/save.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/save/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/save/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/save/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/save/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -252,8 +142,8 @@
       <file leaf-file-name="userdetail.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/student/templates/userdetail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+            <state relative-caret-position="560">
+              <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -350,10 +240,9 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-17" />
-    <option name="y" value="14" />
-    <option name="width" value="1426" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="554" />
+    <option name="width" value="1195" />
     <option name="height" value="1040" />
   </component>
   <component name="ProjectId" id="1VXooEU828H8CWZfhNMn5WiqlM8" />
@@ -393,7 +282,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
     <property name="database.console.LAST_STATE" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../django_sea_finish_20201012" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -428,7 +317,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.hbasetest">
+  <component name="RunManager" selected="Django server.django-bigdata">
     <configuration name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/django_sea_finish_7.11/django_demo/save/templates/index.html" />
     <configuration name="actionhdfs" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="django_demo" />
@@ -506,6 +395,28 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="django-bigdata" type="Python.DjangoServer" factoryName="Django server">
+      <module name="django-bigdata" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+    </configuration>
     <configuration name="django_demo" type="Python.DjangoServer" factoryName="Django server">
       <module name="django_demo" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -558,6 +469,7 @@
       <item itemvalue="Python.tests" />
       <item itemvalue="Python.views (1)" />
       <item itemvalue="Python.hbasetest" />
+      <item itemvalue="Django server.django-bigdata" />
     </list>
     <recent_temporary>
       <list>
@@ -763,6 +675,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50053304" side_tool="true" weight="0.2478355" />
@@ -770,8 +683,8 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" weight="0.32929516" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.38419914" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49946696" visible="true" weight="0.1991342" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26705757" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49946696" visible="true" weight="0.1991342" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26972282" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" weight="0.18763326" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32995737" />
@@ -788,28 +701,28 @@
       <window_info anchor="bottom" id="Find" order="1" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.38419914" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19349681" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38419914" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32929516" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" id="Database" order="4" weight="0.18763326" />
       <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.49946696" visible="true" weight="0.19155844" />
       <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50053304" side_tool="true" weight="0.2478355" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" weight="0.32995737" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.29545453" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32929516" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1182,8 +1095,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/student/templates/userdetail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="27" column="43" selection-start-line="27" selection-start-column="43" selection-end-line="27" selection-end-column="43" />
+        <state relative-caret-position="560">
+          <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
         </state>
       </provider>
     </entry>
